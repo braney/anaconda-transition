@@ -6,24 +6,32 @@ Addressing the Challenges Posed by Anaconda's New Licensing Model
 #################################################################
 
 :Authors:
-   Anna Alber,
-   Joseph Creech,
-   Raffaella D'Auria,
-   Lev Gorenstein,
-   Manasvita Joshi,
-   Ian Kaufman,
-   Geoffrey Lentner,
-   Bryan Raney,
-   Aldo Romero,
-   William Warriner
+ Anna Alber,\ :sup:`1`
+ Joseph Creech,\ :sup:`2`
+ Raffaella D'Auria,\ :sup:`3`
+ Lev Gorenstein,\ :sup:`4`
+ Manasvita Joshi,\ :sup:`5`
+ Ian Kaufman,\ :sup:`6`
+ Geoffrey Lentner,\ :sup:`7`
+ Bryan Raney,\ :sup:`8`
+ Aldo Romero,\ :sup:`9`
+ William Warriner\ :sup:`10`
+
+ :sup:`1` Chapman University;
+ :sup:`2` George Washington University;
+ :sup:`3` OARC/IDRE - University of California, Los Angeles;
+ :sup:`4` Globus - University of Chicago;
+ :sup:`5` Harvard University;
+ :sup:`6` University of California, San Diego;
+ :sup:`7` Purdue University;
+ :sup:`8` Rice University;
+ :sup:`9` West Virginia University;
+ :sup:`10` University of Alabama at Birmingham.
 
 :Version: 1.0
 :Date: 2025-12-XX
 
 .. attention:: NB to change actual date
-
-.. attention:: Do we want authors affiliations?
-               If yes, will need Sphinx/Docutils Extension
 
 
 Executive Summary
