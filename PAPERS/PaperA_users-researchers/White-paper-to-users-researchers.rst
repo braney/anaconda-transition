@@ -26,7 +26,7 @@ Beginner-friendly communication for users/researchers
  :sup:`7` Purdue University;
  :sup:`8` Rice University;
  :sup:`9` West Virginia University;
- :sup:`10` ???.
+ :sup:`10` University of Alabama at Birmingham.
 
 :Version: 1.0
 :Date: 2025-12-XX
