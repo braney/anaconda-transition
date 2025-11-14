@@ -1,9 +1,9 @@
-#######################################
+***************************************
 White paper to institutional leadership
-#######################################
+***************************************
 
 Addressing the Challenges Posed by Anaconda's New Licensing Model
-#################################################################
+=================================================================
 
 :Authors:
  Anna Alber,\ :sup:`1`
@@ -35,7 +35,7 @@ Addressing the Challenges Posed by Anaconda's New Licensing Model
 
 
 Executive Summary
-=================
+-----------------
 
 Recent revisions to Anaconda's Terms of Service (ToS) pose immediate
 risks to our university's research and teaching infrastructure.
@@ -71,7 +71,7 @@ leadership.
 
 
 Introduction
-============
+------------
 
 Anaconda has long been a cornerstone of scientific and academic
 computing, offering a robust package management system and an ecosystem
@@ -192,7 +192,7 @@ To address these challenges, ATWG has initiated several actions:
 
 
 Impact on Academic Institutions
-===============================
+-------------------------------
 
 Academic organizations now face a cascade of practical and financial
 hurdles as a result of Anaconda's revised Terms of Service:
@@ -252,7 +252,7 @@ hurdles as a result of Anaconda's revised Terms of Service:
 
 
 Licensing and Cost Implications
-===============================
+-------------------------------
 
 At the start of 2025, Anaconda
 Inc. `released <https://www.anaconda.com/blog/anaconda-for-education-empowering-the-academic-community>`__
@@ -321,7 +321,7 @@ and Recommendations`_ below.
 
 
 Compliance Concerns
-===================
+-------------------
 
 .. attention:: Need info on notifications institutions have received…
                do we have any examples?
@@ -440,7 +440,7 @@ for policy development and review may include:
 
 
 Alternative Solutions and Recommendations
-=========================================
+-----------------------------------------
 
 Given the compliance challenges raised by Anaconda's new licensing
 model, academic and research institutions need to explore alternative
@@ -528,7 +528,7 @@ burdens of the new licensing restrictions.
 
 
 Conclusion
-==========
+^^^^^^^^^^
 
 While Anaconda's licensing changes pose significant challenges, they
 also present an opportunity to reexamine our dependencies and develop
@@ -538,7 +538,7 @@ without disruption. To that end, our recommendations and call to action
 to the community are mentioned below.
 
 Recommendations:
-----------------
+''''''''''''''''
 
 We propose the following actions to mitigate the impact:
 
@@ -557,7 +557,7 @@ We propose the following actions to mitigate the impact:
 
 
 Call to Action
---------------
+^^^^^^^^^^^^^^
 
 We encourage institutional leaders to:
 
