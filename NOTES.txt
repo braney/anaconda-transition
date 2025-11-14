@@ -2,6 +2,9 @@
 ## INSTRUCTIONS ##
 ##################
 
+# ---------------------#
+# Clone the repository #
+# ---------------------#
 # if working from windows consider using WSL2 which is unix-like
 # or use the methods suggested below to activate a python virtual env in windows
 git clone git@github.com:CaRCC/anaconda-transition.git
@@ -11,7 +14,11 @@ git checkout development  # switch to `development`
 git branch -a    # you should be on `development`
 # git checkout -b sandbox   # create and switch to local sandbox branch
 git  checkout sandbox  # switch to `sandbox` branch
-# perform the next step only once
+
+# ------------------------------------------ #
+# Create the virtual environment with Sphinx #
+# (perform the next step only once)          #
+# -------------------------------------------#
 python3 -m venv venv  # first time ONLY create virtual environment
 source ./venv/bin/activate  # on unix-like system activate the env
 # on windows systems:
@@ -24,6 +31,11 @@ source ./venv/bin/activate  # on unix-like system activate the env
 pip install --upgrade pip   # update pip
 pip install -r requirements.txt  # populate the environment w/ needed packages
 # sphinx-quickstart   # run the sphinx set-up command - if you are cloning this was already done for you
+
+# ---------------------------------------------------- #
+# OK, now we are set - this is how we actually convert #
+# (edit .rst files, build, look, repeat)               #
+# ---------------------------------------------------- #
 cd PAPERS
 make html  # to make html in _build/html
 make latexpdf  # to make latext and pdf in _build/latex
