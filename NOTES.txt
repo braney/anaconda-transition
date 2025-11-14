@@ -15,10 +15,12 @@ git branch -a    # you should be on `development`
 # git checkout -b sandbox   # create and switch to local sandbox branch
 git  checkout sandbox  # switch to `sandbox` branch
 
-# ------------------------------------------ #
-# Create the virtual environment with Sphinx #
-# (perform the next step only once)          #
-# -------------------------------------------#
+# ------------------------------------------- #
+# Create the virtual environment with Sphinx. #
+# This part needs to be done only once        #
+# (except for the venv activation step that   #
+# will be required in every new session.)     #
+# ------------------------------------------- #
 python3 -m venv venv  # first time ONLY create virtual environment
 source ./venv/bin/activate  # on unix-like system activate the env
 # on windows systems:
@@ -35,6 +37,9 @@ pip install -r requirements.txt  # populate the environment w/ needed packages
 # ---------------------------------------------------- #
 # OK, now we are set - this is how we actually convert #
 # (edit .rst files, build, look, repeat)               #
+# ---------------------------------------------------- #
+# NB: if starting a brand new editing session, don't   #
+# forget to re-activate the virtual environment.       #
 # ---------------------------------------------------- #
 cd PAPERS
 make html  # to make html in _build/html
