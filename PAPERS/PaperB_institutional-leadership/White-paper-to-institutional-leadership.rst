@@ -567,9 +567,3 @@ We encourage institutional leaders to:
    advocating for equitable academic licensing.
 
 
-.. attention:: Are we putting contacts here, or on the top page?
-               I'd say, either on the top page (as the entire group's work)
-               or make authors list fully-qualified with affiliations and emails.
-
-| **Contact Information**
-| A,B, C, D
