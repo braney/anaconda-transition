@@ -1,0 +1,68 @@
+************************************
+White paper to users and researchers
+************************************
+
+Beginner-friendly communication for users/researchers
+=====================================================
+
+:Authors:
+ Anna Alber,\ :sup:`1`
+ Joseph Creech,\ :sup:`2`
+ Raffaella D'Auria,\ :sup:`3`
+ Lev Gorenstein,\ :sup:`4`
+ Manasvita Joshi,\ :sup:`5`
+ Ian Kaufman,\ :sup:`6`
+ Geoffrey Lentner,\ :sup:`7`
+ Bryan Raney,\ :sup:`8`
+ Aldo Romero,\ :sup:`9`
+ William Warriner\ :sup:`10`
+
+ :sup:`1` Chapman University;
+ :sup:`2` George Washington University;
+ :sup:`3` OARC/IDRE - University of California, Los Angeles;
+ :sup:`4` Globus - University of Chicago;
+ :sup:`5` Harvard University;
+ :sup:`6` University of California, San Diego;
+ :sup:`7` Purdue University;
+ :sup:`8` Rice University;
+ :sup:`9` West Virginia University;
+ :sup:`10` ???.
+
+:Version: 1.0
+:Date: 2025-12-XX
+
+.. attention:: NB to change actual date
+
+
+Executive Summary
+-----------------
+
+Motivation
+^^^^^^^^^^
+
+In the spring of 2024 Anaconda Inc. announced a major change in their Terms of Services governing the use of Anaconda-provided tools and software packages. The scope and nature of expected changes appeared to be affecting many academic research users and organizations, which led to creation of CaRCC Anaconda Transition Working Group to analyze potential threats and workarounds. This paper is a product of the Working Group.
+
+From the updated ToS, Effective Date: July 15, 2025:
+
+.. admonition:: Is Anaconda still free?
+
+          - Conda is and will always be free, but when choosing an installer and when subsequently downloading, installing, using or updating packages, users need to know the terms of service that apply to each installer and where those packages are hosted to determine if their use is free, as described in the guidelines above. 
+          - If packages are hosted in community channels such as conda-forge, you can use all packages for free, provided you use Miniconda or any non-Anaconda installer such as Miniforge. (subject to the mirrored channels exception mentioned in guideline 2)
+          - If a package is hosted in Anaconda channels, you can use conda for free, but downloading, installing, using and updating those packages may require a commercial fee license, which means:
+              * The distribution of packages Anaconda builds and maintains remains free for individuals and small organizations, which is defined in the Terms of Service as having less than 200 employees or contractors. 
+              * A paid license is required for large organizations, which is defined in the Terms of Service as having more than 200 employees or contractors. 
+              * Anaconda is free for all educational entities—even those with 200 or more employees or contractors—when used in a course curriculum, including teaching, learning, and researching, at accredited universities worldwide. 
+              * A paid license is always required for any individual or entity—even an educational entity—that is embedding, mirroring, or providing third parties access to our products. If you’re interested in pursuing an embedded use case, please contact our partner team at partnerships@anaconda.com. See the `Anaconda Terms of Service <https://anaconda.com/legal>`__ for details.
+
+           -- Excerpt from: “Terms of Services Info.” Anaconda, Published: March 17, 2025. https://www.anaconda.com/pricing/terms-of-service-faqs. Accessed: May 9, 2025.
+
+Problematic parts: 
+
+1. Second bullet: “If packages are hosted in community channels such as conda-forge, you can use all packages for free, provided you use Miniconda or any non-Anaconda installer such as Miniforge” → it would seem that only community channels installed via a non-Anaconda installer are free to use
+
+2. Third bullet: “If a package is hosted in Anaconda channels, you can use conda for free, but downloading, installing, using and updating those packages may require a commercial fee license” → not clear what “conda” in the “you can use conda for free” refers to (Anaconda installer? conda command?) - (Note: :ref:`White paper to institutional leadership` refers to this nuance).
+
+  a. Relevant to academia 3rd sub-bullet: “Anaconda is free for all educational entities—even those with 200 or more employees or contractors—when used in a course curriculum, including teaching, learning, and researching, at accredited universities worldwide” is this bullet mutually exclusive of the others? 
+
+  b. If Answer to a. is NO the 4th sub-bullet: “A paid license is always required for any individual or entity—even an educational entity—that is embedding, mirroring, or providing third parties access to our products.” is problematic for data center software maintainers as: by performing central installations we provide third-party access to it; by creating containers and sharing them on public archives we embed the software.  
+
