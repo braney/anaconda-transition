@@ -75,9 +75,9 @@ fi
 # Configure conda-forge as the only channel
 # Denylist Anaconda repos
 cat <<EOF > "${INSTALL_PREFIX}/.condarc"
-Default_channels: #!final
+default_channels: #!final
   - conda-forge
-Denylist_channels: #!final
+denylist_channels: #!final
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
   - https://repo.anaconda.com/pkgs/msys
