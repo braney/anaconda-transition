@@ -1,30 +1,78 @@
-# anaconda-transition
-*NOTE: THIS WILL BE A TECHNICAL AS OPPOSED TO A DOCUMENTATION REPO.  THE WHITE PAPERS WILL CIRCUMSCRIBE SOLUTIONS*
+Anaconda-Transition White Papers
+================================
 
-OLD NOTES:::
+This repository holds the source and build tooling for the CaRCC Anaconda Transition Working
+Group's project to document changes to Anaconda's Terms of Service from 2024-2025.
+There are two white papers (here named "A" and "B").
 
-Menu of alternative  solutions for vetting/integrating
+- **White Paper A:** Staff/Researchers
+- **White Paper B:** Institutional Leadership
 
-How to provide an anaconda equivalent software module - how to convert an existing anaconda set up and modify/redeploy it using different package manager and conda-forge channels
 
-Involve developers of minforge/conda-forge/bioconda or other conda potentials such as pixi
+Building
+--------
 
-Coordinated lobbying/advocacy effort to support development of alternative to Anaconda - similar to scientific python 
+The documents are compiled to PDF outputs from RestructuredText source via LaTeX using the
+Sphinx build system. The `PAPERS` directory contains the source and build system for this.
+To build the documents you need to run `make latexpdf` with suitable dependencies satisfied
+(i.e., Sphinx and LaTeX). Assuming you have LaTeX available on your system, the
+[uv](https://astral.sh/uv) package manager is a good approach to run the build:
 
-https://github.com/conda/constructor
+```sh
+uvx --from sphinx make latexpdf
+```
 
-https://github.com/TuftsRT/jumboconda 
 
-What practices would put an institute at risk of non-compliance
+Releases
+--------
 
-conda-forge is maintained by anaconda’s core team so they may be biased!
+These documents are continually built using a GitHub Action the compiles the PDFs.
+These assets are attached to each release here in the repo.
+These receive their own DOI via the CaRCC Zenodo publishing platform.
 
-a simple script one can direct at an already deployed anaconda environment, and attempt to redeploy it as a free-as-in-free-beer environment, by modifying the yaml of the environment export, perhaps
 
-We should also have definitions/connotations of conda/Conda/Anaconda. This may have been done in the email discussion or I may be mistaking an article I read a while ago.
+Contributing
+------------
 
-An overview of the related packaging ecosystem and their license stipulations would help: conda, mamba, miniconda, micromamba, uv, pixi, etc.
+We're actively encouraging the research community to participate in the refinement and
+continual process of improvement and updates to these documents as it's a moving target.
+This should be done either as an Issue or Pull Request. Feel free to open
+an Issue to raise an item of concern for discussion. To contribute changes (small are large)
+to the papers please open a Pull Request from your own fork to the `main` branch.
 
-Standardized language and connotations. Conda environments, Anaconda, conda, mini conda, etc?
+Clone your fork locally to make your changes.
 
-Containerize everything
+```sh
+git clone git@github.com:me/anaconda-transition
+cd anaconda-transition
+```
+
+Make sure you're also able to pull changes from the upstream repository.
+
+```sh
+git remote add upstream git@github.com:carcc/anaconda-transition
+git fetch --all
+```
+
+Commit your changes with a useful commit message.
+
+```sh
+git add --all
+git commit -m '[Paper A] Fix description of XYZ'
+```
+
+Make sure your branch is up-to-date.
+
+```sh
+git pull upstream main
+```
+
+If this results in a merge conflict you'll need to resolve those before pushing
+to your fork (so-called "origin").
+
+```sh
+git push origin main
+```
+
+Now you can open a PR by visiting the main repository and selecting your fork.
+
