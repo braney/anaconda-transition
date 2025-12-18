@@ -40,7 +40,7 @@ This should be done either as an Issue or Pull Request. Feel free to open
 an Issue to raise an item of concern for discussion. To contribute changes (small are large)
 to the papers please open a Pull Request from your own fork to the `main` branch.
 
-Clone your fork locally to make your changes.
+Once forked, clone your fork locally to make your changes.
 
 ```sh
 git clone git@github.com:me/anaconda-transition
