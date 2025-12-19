@@ -9,6 +9,8 @@
 # CONDITIONS OF ANY KIND, either express or implied. See the License for the 
 # specific language governing permissions and limitations under the License.
 #
+# Original design: Stephen Szwiec (NDSU)
+#
 # Purpose: 
 #    - Install Miniforge in a ToS compliant manner
 #    - Work on a variety of shells (toward POSIX compliance)
