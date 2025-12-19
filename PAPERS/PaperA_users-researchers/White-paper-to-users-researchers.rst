@@ -123,11 +123,11 @@ Overview Conda vs Mamba
 
 `Conda <https://github.com/conda/conda>`__ and `Mamba <https://github.com/mamba-org/mamba>`__ are package managers and command-line tools, they can be used mostly interchangeably as Mamba was created as a drop-in replacement for Conda (with identical CLI). Both support channels like `conda-forge <https://github.com/conda-forge>`__ and `Anaconda’s defaults <https://www.anaconda.com/docs/tools/working-with-conda/reference/default-channels>`__. The use of Anaconda Inc.’s defaults channels is subjected to `Anaconda Inc.’s TOS <https://legal.anaconda.com/policies/en/>`__. 
 
-Conda is written in python and Mamba is written C/C++ and has a faster dependency resolution as it uses `libsolv <https://github.com/openSUSE/libsolv>`__, which is a fast dependency solver also used by Linux package managers, and it can also parallelize downloads speeding installation further. As of version `23.10.0 <https://conda.github.io/conda-libmamba-solver/user-guide/>`__ conda uses by default the `conda-libmamba-solver` plugin which allows conda to use the same `libsolv` solver used by mamba (see: https://conda.github.io/conda-libmamba-solver/user-guide/).
+Conda is written in Python and Mamba is written C/C++ and has a faster dependency resolution as it uses `libsolv <https://github.com/openSUSE/libsolv>`__, which is a fast dependency solver also used by Linux package managers, and it can also parallelize downloads speeding installation further. As of version `23.10.0 <https://conda.github.io/conda-libmamba-solver/user-guide/>`__ conda uses by default the `conda-libmamba-solver` plugin which allows conda to use the same `libsolv` solver used by mamba (see: https://conda.github.io/conda-libmamba-solver/user-guide/).
 
 Conda can be used independently of the Anaconda distribution (which uses conda as its package manager but also includes tools such as `Spyder <https://www.spyder-ide.org/>`__).  Mamba was originally developed by `QuantStack <https://quantstack.net/>`__ and is distributed by QuantStack and Mamba contributors. Both package managers are open source and licensed under the BSD 3-Clause License. 
 
-Conda and Mamba are general purpose package managers which offer support for: python, R, C/C++, JavaScript/node, compilers, etc. Alternatives to conda and mamba are generally only available for python (and for specific versions of python) and do not cover system libraries.
+Conda and Mamba are general purpose package managers which offer support for: Python, R, C/C++, JavaScript/node, compilers, etc. Alternatives to conda and mamba are generally only available for Python (and for specific versions of Python) and do not cover system libraries.
 
 There are numerous permutations of these tools for installers available that include different combinations of the components described here. These include “micromamba”, “mambaforge”, etc.
 
@@ -235,10 +235,10 @@ Comparison: Conda vs pip:
 +-------------------+------------------------------------+-------------------+
 
 
-Virtual environments in python
+Virtual environments in Python
 ------------------------------
 
-Virtual environments can be created via `python’s venv module <https://docs.python.org/3/library/venv.html>`__, for convenience users may opt to store such environments in a centralized directory, conventionally named: `$HOME/.virtualenvs`, or in a directory within a user’s project directory, conventionally named: `.venv` or `venv`, (see also: `Install packages in a virtual environment using pip and venv <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments>`):
+Virtual environments can be created via `Python’s venv module <https://docs.python.org/3/library/venv.html>`__, for convenience users may opt to store such environments in a centralized directory, conventionally named: `$HOME/.virtualenvs`, or in a directory within a user’s project directory, conventionally named: `.venv` or `venv`, (see also: `Install packages in a virtual environment using pip and venv <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments>`):
 
 .. code-block:: console
  
@@ -250,7 +250,7 @@ Virtual environments can be created via `python’s venv module <https://docs.py
    # a virtual environment can be deactivated with:
    $ deactivate
 
-A python environment can be created using a `requirements.txt file <https://pip.pypa.io/en/latest/user_guide/#requirements-files>`__:
+A Python environment can be created using a `requirements.txt file <https://pip.pypa.io/en/latest/user_guide/#requirements-files>`__:
 
 .. code-block:: console
  
@@ -264,11 +264,16 @@ A `requirements.txt` file can be created with:
  
    $ pip freeze > requirements.txt
 
-A limitation of the `venv` module is that a) it is only limited to Python packages, and b) it can only create virtual environments with a python version as the one used to create the python environment. Other tools exist to overcome the latter limitation, such as conda, mamba, Poetry/Pipenv and UV.
+A limitation of the `venv` module is that a) it is only limited to Python packages, and b) it can only create virtual environments with a Python version as the one used to create the Python environment. Other tools exist to overcome the latter limitation, such as conda, mamba, Poetry/Pipenv and UV.
 
 References:
 `Understanding Conda and Pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
-`Pip vs Conda: A Guide to Managing Python Packages for Data Scientists <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#:~:text=Pip%20vs%20Conda%3A%20Key%20Differences&text=Pip%20installs%20packages%20from%20the,Anaconda%20distribution%20and%20other%20channels.>`__
+`Pip vs Conda: A Guide to Managing Python Packages for Data Scientists <
+
+https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#pip-vs-conda-key-differences
+https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/
+https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#:~:text=Pip%20vs%20Conda%3A%20Key%20Differences&text=Pip%20installs%20packages%20from%20the,Anaconda%20distribution%20and%20other%20channels.>`__
+
 `Install packages in a virtual environment using pip and venv <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>`__
 
 
@@ -299,7 +304,7 @@ If you see any packages listed from "repo.anaconda.com", these fall under the An
 R and Anaconda
 --------------
 
-Anaconda can be useful to manage separate virtual environments and R versions. This functionality can be retained while avoiding paid channels by sticking to strict channel sources using bioconda and conda-forge. Pixi or miniforge are good options for this. Like with python, some R packages may not be available in conda-forge but should be available in `CRAN <https://cran.r-project.org/>`__ or other non-conda repositories. Additionally, virtual environments are available within R itself via `renv <https://rstudio.github.io/renv/>`__. R also offers the ability to specify different package paths using R_LIBS_USER / .libPaths() which offers the functionality of virtual environments.
+Anaconda can be useful to manage separate virtual environments and R versions. This functionality can be retained while avoiding paid channels by sticking to strict channel sources using bioconda and conda-forge. Pixi or miniforge are good options for this. Like with Python, some R packages may not be available in conda-forge but should be available in `CRAN <https://cran.r-project.org/>`__ or other non-conda repositories. Additionally, virtual environments are available within R itself via `renv <https://rstudio.github.io/renv/>`__. R also offers the ability to specify different package paths using R_LIBS_USER / .libPaths() which offers the functionality of virtual environments.
 
 .. attention:: Should we remove the following points? Or address them?
 
