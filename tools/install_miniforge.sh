@@ -75,6 +75,8 @@ fi
 # Configure conda-forge as the only channel
 # Denylist Anaconda repos
 cat <<EOF > "${INSTALL_PREFIX}/.condarc"
+channels: #!final
+  - conda-forge
 default_channels: #!final
   - conda-forge
 denylist_channels: #!final
