@@ -29,7 +29,7 @@ Addressing the Challenges Posed by Anaconda's New Licensing Model
  :sup:`10` University of Alabama at Birmingham.
 
 :Version: 1.0
-:Date: 2025-12-XX
+:Date: 2026-01-XX
 
 .. attention:: NB to change actual date
 
@@ -37,18 +37,22 @@ Addressing the Challenges Posed by Anaconda's New Licensing Model
 Executive Summary
 -----------------
 
-Recent revisions to Anaconda's Terms of Service (ToS) pose immediate
+Recent revisions to Anaconda's Terms of Service (ToS) pose 
 risks to our university's research and teaching infrastructure.
 Anaconda's Python distribution and package-management platform has long
 been available at no cost for academic use, underpinning – locally and
-on our HPC clusters – the majority of scientific workflows across
+on our HPC clusters – the of a large share of scientific workflows across
 departments. The newly proposed restrictions and license-fee
 requirements could introduce significant financial burdens, disrupt
 established computational environments, and undermine collaborative
 projects – from individual lab pipelines to cross-campus consortium
 efforts.
 
-At a recent Campus Research Computing Consortium (CaRCC) meeting,
+At a Campus Research Computing Consortium (CaRCC) meeting,
+
+.. attention:: consider using actual date or month/year
+
+	   
 representatives from national laboratories, DoE facilities, and peer
 institutions underscored shared concerns, such as, which institutions
 (and which categories of users – scholarly vs. research, on-campus
@@ -68,6 +72,7 @@ cost-effective access to the Anaconda ecosystem, preserve the integrity
 of our teaching labs and research clusters, and sustain our science
 leadership.
 
+.. attention:: the paragraph above is now superseded by new Academic 
 
 
 Introduction

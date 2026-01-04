@@ -10,8 +10,8 @@
 git clone git@github.com:CaRCC/anaconda-transition.git
 cd anaconda-transition/
 git branch -a  # you should be on `main`
-git checkout development  # switch to `development`
-git branch -a    # you should be on `development`
+git checkout sandbox  # switch to `sandbox`
+git branch -a    # you should be on `sandbox`
 # git checkout -b sandbox   # create and switch to local sandbox branch
 git  checkout sandbox  # switch to `sandbox` branch
 

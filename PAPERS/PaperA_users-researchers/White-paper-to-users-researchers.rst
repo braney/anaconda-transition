@@ -29,7 +29,7 @@ Beginner-friendly communication for users/researchers/facilitators
  :sup:`10` University of Alabama at Birmingham.
 
 :Version: 1.0
-:Date: 2025-12-XX
+:Date: 2026-01-XX
 
 .. attention:: NB to change actual date
 
@@ -42,7 +42,7 @@ Motivation
 
 In the spring of 2024 `Anaconda Inc. <https://www.anaconda.com/>`__ announced a major change in their `Terms of Service <https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/>`__ governing the use of Anaconda-provided tools and software packages in educational settings. According to this update, which became effective in March 30, 2024:
 
-    Educational Entities will be exempt from the paid license requirement, provided that the use of the Anaconda Offering(s) is solely limited to being used for a curriculum-based course. [#f1]_
+    Educational Entities will be exempt from the paid license requirement, provided that the use of the Anaconda Offering(s) is solely limited to being used for a curriculum-based course. `From "Terms of Service."  Anaconda, Published: March 30, 2024. Retrieved from Web Archive: <https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/>`__
 
 
 The scope and nature of expected changes appeared to be affecting many academic research users and organizations, which led to creation of the `CaRCC Anaconda Transition Working Group <https://carcc.org/anaconda-transition-working-group/>`__ to analyze potential threats and workarounds. This paper is a product of the Working Group.
@@ -52,30 +52,25 @@ After the `CaRCC Anaconda Transition Working Group <https://carcc.org/anaconda-t
 
 .. admonition:: Is Anaconda still free?
 
-          - Conda is and will always be free, but when choosing an installer and when subsequently downloading, installing, using or updating packages, users need to know the terms of service that apply to each installer and where those packages are hosted to determine if their use is free, as described in the guidelines above. 
-          - If packages are hosted in community channels such as conda-forge, you can use all packages for free, provided you use Miniconda or any non-Anaconda installer such as Miniforge. (subject to the mirrored channels exception mentioned in guideline 2)
           - If a package is hosted in Anaconda channels, you can use conda for free, but downloading, installing, using and updating those packages may require a commercial fee license, which means:
               * The distribution of packages Anaconda builds and maintains remains free for individuals and small organizations, which is defined in the Terms of Service as having less than 200 employees or contractors. 
               * A paid license is required for large organizations, which is defined in the Terms of Service as having more than 200 employees or contractors. 
               * Anaconda is free for all educational entities—even those with 200 or more employees or contractors—when used in a course curriculum, including teaching, learning, and researching, at accredited universities worldwide. 
               * A paid license is always required for any individual or entity—even an educational entity—that is embedding, mirroring, or providing third parties access to our products. If you’re interested in pursuing an embedded use case, please contact our partner team at partnerships@anaconda.com. See the `Anaconda Terms of Service <https://anaconda.com/legal>`__ for details.
 
-           -- Excerpt from: “Terms of Services Info.” Anaconda, Published: March 17, 2025. https://www.anaconda.com/pricing/terms-of-service-faqs. Accessed: May 9, 2025. Available at: https://web.archive.org/web/20250506034856/https://www.anaconda.com/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs.
+           -- Excerpt from: “Terms of Services Info.” Anaconda, Published: March 17, 2025. https://www.anaconda.com/pricing/terms-of-service-faqs. Accessed: May 9, 2025. Available at: `Web Archive <https://web.archive.org/web/20240813115338/https://www.anaconda.com/web/20240813115338/https://www.anaconda.com/pricing/terms-of-service-faqs>`__
 
-Note that the statement: “A paid license is always required for any individual or entity—even an educational entity—that is embedding, mirroring, or providing third parties access to our products” is problematic for research facilitators who maintain software in centralized locations as by performing central installations they may be considered providing third-party access to Anaconda products or by creating containers and sharing them on public archives they may be considered embedding the software. Moreover, the possibility of further changes in the ToS complicate the issue.
+Note that the statement: “A paid license is always required for any individual or entity—even an educational entity—that is embedding, mirroring, or providing third parties access to our products” is problematic for research facilitators who maintain software in centralized locations as by performing central installations they may be considered providing third-party access to Anaconda products if, for example, the institution grants access to external collaborators to their facilities or creating containers and sharing them on public archives they may be considered embedding the software. Moreover, the possibility of further changes in the ToS complicate the issue.
 
 .. attention:: In https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research:
 	       **Does Anaconda require academic entities with 200 or more employees to purchase a business or enterprise license?**
 
 	       No. Anaconda does not require academic institutions and universities to purchase a commercial fee license for our installers or for access to our package repository, regardless of their size, when used in course curricula. We maintain a free-use policy for educational entities when Anaconda is used in course curricula, including teaching, learning, and research at accredited educational institutions worldwide. This free-use policy applies even to large universities with 200 or more employees. The 200-employee threshold for paid licenses primarily applies to commercial organizations. **However, it’s important to note that paid licenses may be required for specific use cases within academic settings, such as embedding Anaconda’s products, mirroring them, or providing third-party access beyond standard educational use.**
 
+	      SHOULD WE SAY THAT THE INSTITUTION IS FREE OF RESPONSIBILITY WHEN IT ASKS ITS PIs TO ONLY GRANT ACCESS TO COLLABORATORS FOR STRICTLY ACADEMIC WORK?
+
 
 Anaconda Inc. eventually published an Academic Policy with an effective date of July 14, 2025 (https://www.anaconda.com/legal/terms/academic also available at: https://web.archive.org/web/20250624202000/https://www.anaconda.com/web/20250624202000/https://www.anaconda.com/legal/terms/academic). 
-
-.. rubric:: Footnotes
-	    
-.. [#f1] "Terms of Service."  Anaconda, Published: March 30, 2024. Retrieved from: https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/.
-
 	
 
 Introduction
@@ -123,11 +118,11 @@ Overview Conda vs Mamba
 
 `Conda <https://github.com/conda/conda>`__ and `Mamba <https://github.com/mamba-org/mamba>`__ are package managers and command-line tools, they can be used mostly interchangeably as Mamba was created as a drop-in replacement for Conda (with identical CLI). Both support channels like `conda-forge <https://github.com/conda-forge>`__ and `Anaconda’s defaults <https://www.anaconda.com/docs/tools/working-with-conda/reference/default-channels>`__. The use of Anaconda Inc.’s defaults channels is subjected to `Anaconda Inc.’s TOS <https://legal.anaconda.com/policies/en/>`__. 
 
-Conda is written in Python and Mamba is written C/C++ and has a faster dependency resolution as it uses `libsolv <https://github.com/openSUSE/libsolv>`__, which is a fast dependency solver also used by Linux package managers, and it can also parallelize downloads speeding installation further. As of version `23.10.0 <https://conda.github.io/conda-libmamba-solver/user-guide/>`__ conda uses by default the `conda-libmamba-solver` plugin which allows conda to use the same `libsolv` solver used by mamba (see: https://conda.github.io/conda-libmamba-solver/user-guide/).
+Conda is written in python and Mamba is written C/C++ and has a faster dependency resolution as it uses `libsolv <https://github.com/openSUSE/libsolv>`__, which is a fast dependency solver also used by Linux package managers, and it can also parallelize downloads speeding installation further. As of version `23.10.0 <https://conda.github.io/conda-libmamba-solver/user-guide/>`__ conda uses by default the `conda-libmamba-solver` plugin which allows conda to use the same `libsolv` solver used by mamba (see: https://conda.github.io/conda-libmamba-solver/user-guide/).
 
 Conda can be used independently of the Anaconda distribution (which uses conda as its package manager but also includes tools such as `Spyder <https://www.spyder-ide.org/>`__).  Mamba was originally developed by `QuantStack <https://quantstack.net/>`__ and is distributed by QuantStack and Mamba contributors. Both package managers are open source and licensed under the BSD 3-Clause License. 
 
-Conda and Mamba are general purpose package managers which offer support for: Python, R, C/C++, JavaScript/node, compilers, etc. Alternatives to conda and mamba are generally only available for Python (and for specific versions of Python) and do not cover system libraries.
+Conda and Mamba are general purpose package managers which offer support for: python, R, C/C++, JavaScript/node, compilers, etc. Alternatives to conda and mamba are generally only available for python (and for specific versions of python) and do not cover system libraries.
 
 There are numerous permutations of these tools for installers available that include different combinations of the components described here. These include “micromamba”, “mambaforge”, etc.
 
