@@ -1,8 +1,8 @@
 ***************************************
-White paper to researchers, research computing facilitators, and institutional leadership
+Addressing the Challenges Posed by Anaconda's New Licensing Model
 ***************************************
 
-Addressing the Challenges Posed by Anaconda's New Licensing Model
+White paper to researchers, research computing facilitators, and institutional leadership
 =================================================================
 
 :Authors:
@@ -37,30 +37,33 @@ Addressing the Challenges Posed by Anaconda's New Licensing Model
 Executive Summary
 -----------------
 
-Recent revisions to Anaconda's Terms of Service (ToS) could pose 
-risks to our university's research and teaching infrastructure.
-Anaconda's Python distribution and package-management platform has long
-been available at no cost for academic use, underpinning – locally and
-on our HPC clusters – the of a large share of scientific workflows across
-departments. The newly proposed restrictions and license-fee
-requirements could introduce significant financial burdens, disrupt
-established computational environments, and undermine collaborative
-projects – from individual lab pipelines to cross-campus consortium
-efforts.
+`Anaconda Inc. <https://www.anaconda.com/>`__ revised its Terms of
+Service (ToS) in the `Spring of 2024
+<https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/>`__
+that poses potential risks to our university's research
+infrastructure. Anaconda's Python distribution and package-management
+platform has long been available at no cost for academic use,
+underpinning – locally and on our HPC clusters – the majority of
+scientific workflows across multiple departments. The current
+restrictions and license-fee requirements introduces significant
+financial burdens, disrupt established computational environments, and
+undermine collaborative projects – from individual lab pipelines to
+cross-campus consortium efforts.
 
 At a Campus Research Computing Consortium (CaRCC) meeting in 2024,
 
 .. attention:: consider using actual date or month/year
 	   
 representatives from national laboratories, DoE facilities, and peer
-institutions underscored shared concerns, such as, which institutions
-(and which categories of users – scholarly vs. research, on-campus
-vs. external collaborators) qualify for a free or reduced-fee academic
-tier, or how would individual researchers submit proof of affiliation,
-or can the university secure a blanket exemption, or how will site-wide
-installations on shared systems be licensed, particularly when NSF- or
-DoE-funded collaborators without formal university appointments also
-require access.
+institutions underscored shared concerns regarding these revisions,
+such as, which institutions (and which categories of users – scholarly
+vs. research, on-campus vs. external collaborators) would qualify for
+a free or reduced-fee academic tier, or how would individual
+researchers submit proof of affiliation, or can the university secure
+a blanket exemption, or how will site-wide installations on shared
+systems be licensed, particularly when NSF- or DoE-funded
+collaborators without formal university appointments also require
+access.
 
 At the time, Anaconda's team was drafting a standalone academic policy
 and had invited institutions to coordinate use-case details and a
@@ -324,17 +327,17 @@ and Recommendations`_ below.
 Compliance Concerns
 -------------------
 
-.. attention:: Need info on notifications institutions have received…
-               do we have any examples?
-               [leftover comment that needs addressing]
-
 The recent changes to Anaconda's licensing model, which limit the
 previously free distribution and usage of its platform for
-non-commercial purposes, have raised significant compliance concerns for
-academic and research institutions. These concerns are especially
+non-commercial purposes, have raised significant compliance concerns
+for academic and research institutions. These concerns are especially
 critical as institutions balance the need for cutting-edge research
 tools with the strict legal and regulatory frameworks governing their
-operations.
+operations. As such, educational entities are exempt from the paid
+license requirement provided they use Anaconda Offering(s) solely for
+curriculum-based course or non-commercial research where the Anaconda
+Offering(s) is guaranteed to be not mirrored, embedded, or
+redistributed.
 
 **1. Licensing Restrictions and Compliance Risks:**
 
