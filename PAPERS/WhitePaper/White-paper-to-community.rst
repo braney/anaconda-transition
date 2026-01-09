@@ -42,28 +42,25 @@ Service (ToS) in the `Spring of 2024
 <https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/>`__
 that poses potential risks to our university's research
 infrastructure. Anaconda's Python distribution and package-management
-platform has long been available at no cost for academic use,
-underpinning – locally and on our HPC clusters – the majority of
-scientific workflows across multiple departments. The current
-restrictions and license-fee requirements introduces significant
-financial burdens, disrupt established computational environments, and
-undermine collaborative projects – from individual lab pipelines to
-cross-campus consortium efforts.
+platform has long been available at no cost for academic use - locally
+and on HPC clusters – underpinning the majority of scientific
+workflows across multiple departments. The current restrictions and
+license-fee requirements introduces significant financial burdens,
+disrupt established computational environments, and undermine
+collaborative projects – from individual lab pipelines to cross-campus
+consortium efforts.
 
-At a Campus Research Computing Consortium (CaRCC) meeting in 2024,
-
-.. attention:: consider using actual date or month/year
-	   
-representatives from national laboratories, DoE facilities, and peer
-institutions underscored shared concerns regarding these revisions,
-such as, which institutions (and which categories of users – scholarly
-vs. research, on-campus vs. external collaborators) would qualify for
-a free or reduced-fee academic tier, or how would individual
-researchers submit proof of affiliation, or can the university secure
-a blanket exemption, or how will site-wide installations on shared
-systems be licensed, particularly when NSF- or DoE-funded
-collaborators without formal university appointments also require
-access.
+At a Campus Research Computing Consortium (CaRCC) meeting in Fall 2024
+(?), representatives from national laboratories, DoE facilities, and
+peer institutions underscored shared concerns regarding these
+revisions, such as, which institutions (and which categories of users
+– scholarly vs. research, on-campus vs. external collaborators) would
+qualify for a free or reduced-fee academic tier, or how would
+individual researchers submit proof of affiliation, or can the
+university secure a blanket exemption, or how will site-wide
+installations on shared systems be licensed, particularly when NSF- or
+DoE-funded collaborators without formal university appointments also
+require access.
 
 At the time, Anaconda's team was drafting a standalone academic policy
 and had invited institutions to coordinate use-case details and a
