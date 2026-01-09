@@ -438,6 +438,21 @@ for policy development and review may include:
    to migrate to alternative software solutions to mitigate compliance
    risk.
 
+**4. Secure Environment Cluster:**
+
+Institutions operating a secure environment cluster would need to
+evaluate the security level of their cluster to decide whether the
+purchase of Anaconda's distribution is warranted or not. For example,
+any cluster that is required to ensure privacy and security at
+federally recognized standards, such as NIST 800-53 and NIST 800-171,
+must have Anaconda's distribution available on the cluster instead of
+utilizing open-source alternatives. This is because the open-source
+alternatives, listed below, are not guaranteed to be compliant with
+security standards needed for regulated data and could compromise a
+secure environment cluster. On the other hand, most clusters with
+requirements of housing sensitive datasets with Data Usage Agreement
+(DUA) and/or IRB's could still utilize alternative methods, mentioned
+below, for installing packages.
 
 
 Alternative Solutions and Recommendations
