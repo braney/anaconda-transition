@@ -349,7 +349,7 @@ thereby allowing us to avoid any license or out-of-compliance issues
 with them. A summarized version of these solutions is mentioned in the
 :ref:`Alternative Solutions and Recommendations` section, whereas a
 detailed description of utilizing these methods is provided in the
-`Appendix`__.
+:ref:`Appendix`.
 
 
 
@@ -486,6 +486,7 @@ requirements of housing sensitive datasets with Data Usage Agreement
 (DUA) and/or IRB's could still utilize alternative methods, mentioned
 below, for installing packages.
 
+.. _Alternative Solutions and Recommendations:
 
 Alternative Solutions and Recommendations
 -----------------------------------------
@@ -605,8 +606,11 @@ We propose the following actions to mitigate the impact:
 
 
 
-Appendix
--------------------
+.. _Appendix:
+   
+Appendix 
+----------
+
 Alternative Solutions and Recommendations
 -----------------------------------------
 
