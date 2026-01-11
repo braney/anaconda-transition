@@ -377,8 +377,8 @@ model has allowed institutions to develop and deploy software
 environments, often across large-scale high-performance computing (HPC)
 systems, with minimal administrative burden.
 
-However, the new licensing changes—particularly for non-commercial
-users—could potentially introduce the risk of non-compliance in the
+However, the new licensing changes— particularly for non-commercial
+users —could potentially introduce the risk of non-compliance in the
 following areas:
 
 *License/Agreement Enforcement:*
@@ -486,6 +486,24 @@ requirements of housing sensitive datasets with Data Usage Agreement
 (DUA) and/or IRB's could still utilize alternative methods, mentioned
 below, for installing packages.
 
+Keeping all of the above in mind, some of the key questions that still
+remain unanswered are:
+
+- Does an “academic tier” exemption cover external collaborators (NSF-
+  or DOE-funded researchers without formal university appointments)?
+
+- Can the institution provide a single “proof of affiliation” to
+  Anaconda, or must every individual user register separately?
+
+- Would it be possible for the research community to obtain further
+  clarity from Anaconda Inc. on free distribution of containerization
+  platforms, such as Singularity/Apptainer or Docker?
+
+Hence, exploring alternative open-source solutions for managing
+packages and installing software for scientific workflows is
+imperative for the research community to proceed with their research
+and collaboration in an informed manner.
+
 .. _Alternative Solutions and Recommendations:
 
 Alternative Solutions and Recommendations
@@ -502,11 +520,10 @@ licensing structure.
 
 One of the most straightforward alternatives is to transition to fully
 open-source package management systems that can replace Anaconda's
-distribution platform, offering similar functionality without licensing
-restrictions, such as conda-forge. For a full list of options, see
-:doc:`/PaperA_users-researchers/White-paper-to-users-researchers`.
-This allows institutions to create isolated environments without requiring a
-paid license.
+distribution platform, offering similar functionality without
+licensing restrictions, such as conda-forge. This allows institutions
+to create isolated environments without requiring a paid license. For
+a full list of options, see :ref:`Appendix`.
 
 **2. Docker and Containerization**
 
@@ -532,7 +549,7 @@ it's not clear what they mean by "system outputs."
 Our concern with these restrictions is a common use-case of a researcher
 creating a Docker (or Singularity/Apptainer) Container to share their
 code and/or workflows with other researchers, possibly at other academic
-institutions. If that researcher includes Anaconda Inc. packages within
+institutions. If that researcher includes Anaconda Inc. packages within
 the container image, it could be considered "embedding," which is not
 allowed; sharing that container with others outside their own
 Institution would certainly seem to count as "distribution". It is
@@ -540,7 +557,7 @@ unclear if a Container image would be considered as "system outputs" so
 sharing one might not be allowed outside the originating Institution.
 
 The only solution we see in this case is to make sure that the
-restricted Anaconda Inc. packages are not included in any Containers.
+restricted Anaconda Inc. packages are not included in any Containers.
 However, it would be quite difficult for any Institution to monitor the
 behavior of all researchers at the level of creating and/or sharing
 Container images. A given image could be potentially scanned for
@@ -567,13 +584,12 @@ of cost, compliance, and operational complexity. The best solution for
 any given institution will depend on its specific needs, infrastructure,
 and available resources.
 
-As institutions move away from Anaconda's licensing model, they should
-evaluate the potential of these solutions based on their current
-research tools, budget constraints, and long-term goals. A hybrid
-approach that incorporates multiple tools may provide the greatest
-flexibility and minimize both the compliance risks and operational
-burdens of the new licensing restrictions.
-
+If an institution decides to move away from Anaconda's licensing
+model, they should evaluate the potential of these solutions based on
+their current research tools, budget constraints, and long-term
+goals. A hybrid approach that incorporates multiple tools may provide
+the greatest flexibility and minimize both the compliance risks and
+operational burdens of the new licensing restrictions.
 
 
 Conclusion
@@ -581,10 +597,10 @@ Conclusion
 
 While Anaconda's licensing changes pose significant challenges, they
 also present an opportunity to reexamine our dependencies and develop
-more resilient software ecosystems. Through collaboration and proactive
-planning, we can ensure that academic research continues to thrive
-without disruption. To that end, our recommendations and call to action
-to the community are mentioned below.
+more resilient software ecosystems. Through collaboration and
+proactive planning, we can ensure that academic research continues to
+thrive without disruption. To that end, our recommendations to the
+community are mentioned below.
 
 Recommendations:
 ''''''''''''''''
@@ -599,20 +615,24 @@ We propose the following actions to mitigate the impact:
    transition.
 3. **Evaluate and Pilot Alternatives:** Proactively explore and test
    alternative package management and distribution solutions to reduce
-   reliance on Anaconda.
+   reliance on Anaconda. See :ref:`Appendix`
 4. **Establish Contingency Plans:** Develop strategies to ensure
    research continuity if access to Anaconda becomes restricted or
    unsustainable.
 
 
-
 .. _Appendix:
    
 Appendix 
-----------
+^^^^^^^^^
 
-Alternative Solutions and Recommendations
+Open-source Solutions
 -----------------------------------------
+
+Below is a list of open-source options that the ATWG has put
+together. This is not a complete list but is a good starting point
+should an insitution or a research team decide to go the open-source
+route.
 
 - Miniforge (pulls from conda-forge by default)
 - Pip (pulls from PyPI)
@@ -662,10 +682,6 @@ available that include different combinations of the components
 described here. These include “micromamba”, “mambaforge”, etc.
 
 
-.. attention:: 
-		SHOULD WE STILL DO THIS??? explore commercial or open-source, community-driven alternatives to Anaconda’s offerings, with attention paid to Python vs R vs other-centric environments.
-
-  
 Overview: Conda vs Miniforge and alternate conda package channels
 -----------------------------------------------------------------
 
@@ -678,35 +694,23 @@ where each channel is a different source for packaged software.
 
 Conda typically comes configured to install packages from the
 "defaults" channel, which supplies packages from the Anaconda,
-Inc. repository.  Use of those packages may require a license from
-Anaconda, Inc.  A common alternative channel is "conda-forge" which
-provides a large collection of community-supplied packages.  Another
-commonly used community channel is "bioconda."
+Inc. repository. Use of those packages may require a license from
+Anaconda, Inc. A common alternative channel is
+"`conda-forge<https://conda-forge.org/>`__" which provides a large
+collection of community-supplied packages. Another commonly used
+community channel is "`bioconda<https://bioconda.github.io/>`__".
 
 .. attention::
 
-   According to:
-   https://web.archive.org/web/20250506034856/https://www.anaconda.com/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs
-   we may not need to block Anaconda.com channels:
+   According to their archival FAQ from `May 2025<
+   https://web.archive.org/web/20250506034856/https://www.anaconda.com/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs>`__
+   we may not need to block Anaconda.com channels. However, ATWG had
+   conducted their own tests by blocking `repo.anaconda.com`__ and
+   found out that one can continue to install packages using the
+   bioconda channel or python packages in R using the `reticulate
+   package<https://rstudio.github.io/reticulate/>`__ with
+   "conda-forge" set as the default channel, without any issues.
    
-   Does Anaconda require academic entities with 200 or more employees
-   to purchase a business or enterprise license?
-   
-   No. Anaconda does not require academic institutions and
-   universities to purchase a business or enterprise license for
-   access to our package repository, regardless of their size, when
-   used in course curricula. We maintain a free-use policy for
-   educational entities when Anaconda is used in course curricula,
-   including teaching, learning, and research at accredited
-   educational institutions worldwide. This free-use policy applies
-   even to large universities with 200 or more employees. The
-   200-employee threshold for paid licenses primarily applies to
-   commercial organizations. **However, it’s important to note that
-   paid licenses may be required for specific use cases within
-   academic settings, such as embedding Anaconda’s products, mirroring
-   them, or providing third-party access beyond standard educational
-   use.**
-
 
 Important Update on the "defaults" Channel
 ------------------------------------------
@@ -909,18 +913,6 @@ available within R itself via `renv
 <https://rstudio.github.io/renv/>`__. R also offers the ability to
 specify different package paths using R_LIBS_USER / .libPaths() which
 offers the functionality of virtual environments.
-
-.. attention:: Should we remove the following points? Or address them?
-
-	       - Provide guidance on evaluating and transitioning to
-                 new platforms.
-	       - Suggest strategies for negotiating with Anaconda or
-                 seeking waivers/exemptions. The CaRCC Anaconda
-                 Transition working group has shouldered the burden
-                 here.
-	       - Provide guidance on how facilitators can best educate
-                 their users.
-
 
 
 Other alternatives
