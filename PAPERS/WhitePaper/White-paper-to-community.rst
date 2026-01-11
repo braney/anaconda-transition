@@ -706,7 +706,7 @@ is `bioconda <https://bioconda.github.io/>`__.
    <https://web.archive.org/web/20250506034856/https://www.anaconda.com/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs>`__,
    we may not need to block Anaconda.com channels. However, ATWG had
    conducted their own tests by blocking `Anaconda repository
-   <repo.anaconda.com>`__ and found out that one can continue to
+   <https://repo.anaconda.com>`__ and found out that one can continue to
    install packages using the bioconda channel or python packages in R
    using the `reticulate package
    <https://rstudio.github.io/reticulate/>`__ with "conda-forge" set
