@@ -210,36 +210,38 @@ To address these challenges, ATWG had initiated several actions:
 Impact on Academic Institutions
 -------------------------------
 
-Academic organizations now face a cascade of practical and financial
-hurdles as a result of Anaconda's revised Terms of Service:
+At the time of Anaconda's updates-to-ToS announcement, academic
+organizations faced a cascade of practical and financial hurdles:
 
 1. Escalating Licensing Costs
 
-   Under the new model, any institution with more than 200 employees
-   must purchase a commercial license. For a typical mid‐sized
-   university—supporting dozens of departments, central IT-managed HPC
-   clusters, and distributed lab installations—annual fees could reach
-   tens of thousands of dollars. These unplanned expenses threaten to
-   divert funding away from core research and teaching needs.
+   Based on the original announcement, it was perceived that any
+   institution with more than 200 employees must purchase a commercial
+   license. For a typical mid‐sized university—supporting dozens of
+   departments, central IT-managed HPC clusters, and distributed lab
+   installations—annual fees could reach tens of thousands of
+   dollars. These unplanned expenses threaten to divert funding away
+   from core research and teaching needs.
 
 2. Compliance Ambiguity
 
-   CaRCC members report receiving "non-compliance" notices for shared
-   installations on central clusters. Key questions remain unanswered:
+   CaRCC members reported receiving "non-compliance" notices for
+   shared installations on central clusters. This led to some of the
+   key questions remaining unanswered:
 
    -  Does an "academic tier" exemption cover external collaborators
       (NSF- or DoE-funded researchers without formal university
       appointments)?
    -  Can the institution provide a single "proof of affiliation" to
       Anaconda, or must every individual user register separately?
-
+      
 3. Transition Overhead
 
-   Moving away from Anaconda-whether to conda-forge/Miniconda, Spack, or
-   containers-requires substantial IT staff time, retraining of faculty
-   and students, and revalidation of research pipelines. One peer
-   university estimates that piloting a Spack migration consumed over
-   200 staff-hours and delayed several high-priority simulation
+   Moving away from Anaconda-whether to conda-forge/Miniconda, Spack,
+   or containers-requires substantial IT staff time, retraining of
+   faculty and students, and revalidation of research pipelines. One
+   peer university estimated that piloting a Spack migration consumed
+   over 200 staff-hours and delayed several high-priority simulation
    campaigns by weeks.
 
 4. Disruption to Scientific Workflows
@@ -270,69 +272,84 @@ hurdles as a result of Anaconda's revised Terms of Service:
 Licensing and Cost Implications
 -------------------------------
 
-At the start of 2025, Anaconda
-Inc. `released <https://www.anaconda.com/blog/anaconda-for-education-empowering-the-academic-community>`__
-`Anaconda for
-Education <https://www.anaconda.com/industries/education>`__ to
-accelerate AI learning across the academic community for free of charge.
-This includes access to free AI courses, storage, and tools at no cost
-to users, such as researchers, students, and educators with an academic
+At the start of 2025, Anaconda Inc. `released
+<https://www.anaconda.com/blog/anaconda-for-education-empowering-the-academic-community>`__
+`Anaconda for Education
+<https://www.anaconda.com/industries/education>`__ to accelerate AI
+learning across the academic community for free of charge. This
+includes access to free AI courses, storage, and tools at no cost to
+users, such as researchers, students, and educators with an academic
 access to the Anaconda Starter plan. The products and tools that are
-included in this package are `Anaconda
-Distribution <https://www.anaconda.com/download>`__, `Anaconda
-Navigator <https://www.anaconda.com/products/ai-navigator>`__, `Anaconda
-AI
+included in this package are `Anaconda Distribution
+<https://www.anaconda.com/download>`__, `Anaconda Navigator
+<https://www.anaconda.com/products/ai-navigator>`__, `Anaconda AI
 Assistant <https://www.anaconda.com/capability/anaconda-assistant>`__,
 `Public Package Repository <https://repo.anaconda.com/>`__, `Anaconda
-Learning <https://www.anaconda.com/learning>`__, `Cloud
-Notebooks <https://www.anaconda.com/products/notebooks>`__, and `App
-publishing with
-Panel <https://www.anaconda.com/blog/a-new-and-simple-way-to-publish-your-data-applications>`__.
+Learning <https://www.anaconda.com/learning>`__, `Cloud Notebooks
+<https://www.anaconda.com/products/notebooks>`__, and `App publishing
+with Panel
+<https://www.anaconda.com/blog/a-new-and-simple-way-to-publish-your-data-applications>`__.
 
-In order to access the academic account one needs to be either actively
-enrolled or employed at an accredited academic institution with a
-verified academic email address. However, for an accredited academic
-institution, the use of Anaconda package repository continues to be free
-and they do not need to purchase any business or enterprise license
-regardless of their size. The free-use policy for educational entities
-continues to be in effect as long as Anaconda is used in the
-institution's course curricula, teaching, learning, and research. In
-addition to academia, Anaconda Inc. now offers AI-based solutions by
-industry that include finance, healthcare, government, manufacturing,
-and technology. All of the categories come with their own price packages
-except for academia, where the use is free as long as no embedding,
-mirroring, or access to a third party has been carried out for their
-products. However, they urge institutions to contact their `partner
-team <https://legal.anaconda.com/policies/en/>`__ at
-partnerships@anaconda.com should the need to pursue an embedded use case
-arises in academia. This is different when compared to their archival
-FAQ from `August 13,
-2024 <https://web.archive.org/web/20250506042444/https://www.anaconda.com/web/20250506042444/https://www.anaconda.com/pricing/terms-of-service-faqs>`__,
-where no such requirement was stated for any kind of academic use
-including embedding, mirroring, or third party access.
+In July 2025, Anaconda Inc. published their `revised
+ToS<https://www.anaconda.com/legal/terms/terms-of-service>`__,
+according to which Anaconda does not require academic institutions and
+universities to purchase a commercial fee license for their installers
+or for access to their `package
+repository<https://repo.anaconda.com/>`__, regardless of their size,
+when used in course curricula, including teaching, learning, and
+research at accredited educational institutions worldwide. The policy
+is applicable to universities with 200 or more employees and the
+200-employee threshold for paid licenses primarily applies to
+commercial organizations. However, it is important to note that paid
+licenses may be required for specific use cases within academic
+settings, such as embedding Anaconda’s products, mirroring them, or
+providing third-party access beyond standard educational use.
 
-Given that the state of affairs is still evolving at Anaconda Inc. and
-that there is a fair amount of ambiguity in what would constitute as an
-out-of-compliance case and when would a license be required, the ATWG
-has decided to come up with a number of recommendations for the academic
-community that rely upon alternative methods to achieve what can be
-accomplished with Anaconda distribution. Additionally, ATWG strongly
-feels that the campus research computing teams should not be expected to
-police the academic community, in how Anaconda Inc. products are being
-utilized by an individual user, once the distribution has been installed
-on academic and research clusters in full compliance with Anaconda
-Inc.'s policies for academia. Hence, having an alternative would help
-the RCD and academic community immensely.
+In order to access the academic account one needs to be either
+actively enrolled or employed at an accredited academic institution
+with a verified academic email address. As mentioned above, for an
+accredited academic institution, the use of Anaconda package
+repository continues to be free and they do not need to purchase any
+business or enterprise license regardless of their size. The free-use
+policy for educational entities continues to be in effect as long as
+Anaconda is used in the institution's course curricula, teaching,
+learning, and research. In addition to academia, Anaconda Inc. now
+offers AI-based solutions by industry that include finance,
+healthcare, government, manufacturing, and technology. All of the
+categories come with their own price packages except for academia,
+where the use is free as long as no embedding, mirroring, or access to
+a third party has been carried out for their products. However, they
+urge institutions to contact their `partner team
+<https://legal.anaconda.com/policies/en/>`__ at
+partnerships@anaconda.com should the need to pursue an embedded use
+case arises in academia. This is different from what was mentioned in
+their archival FAQ from `August 13, 2024
+<https://web.archive.org/web/20250506042444/https://www.anaconda.com/web/20250506042444/https://www.anaconda.com/pricing/terms-of-service-faqs>`__
+(not a valid URL anymore), where no such requirement was stated for
+any kind of academic use including embedding, mirroring, or third
+party access.
+
+Given that the state of affairs is still evolving at Anaconda Inc. and
+that there is a fair amount of ambiguity in what would constitute as
+an out-of-compliance case and when would a license be required, the
+ATWG has decided to come up with a number of recommendations for the
+academic community that rely upon alternative methods to achieve what
+can be accomplished with Anaconda distribution. Additionally, ATWG
+strongly feels that the campus research computing teams should not be
+expected to police the academic community in how Anaconda
+Inc. products are being utilized, by user(s), once the distribution
+has been installed on academic and research clusters in full
+compliance with Anaconda Inc.'s policies for academia. Hence, having
+alternative solutions would help the research community decide, in an
+informed manner, on how to proceed with package management.
 
 The proposed solutions are all based on open-source software and
-distribution that do not depend on any of the Anaconda Inc. products,
+distribution that do not depend on any of the Anaconda Inc. products,
 thereby allowing us to avoid any license or out-of-compliance issues
-with Anaconda Inc. The ATWG has written another white paper,
-:doc:`/PaperA_users-researchers/White-paper-to-users-researchers`, in
-addition to this one, that explains the methodology of utilizing the
-open-source solutions to our researchers and research facilitators. A
-summarized version of this is mentioned in the `Alternative Solutions
-and Recommendations`_ below.
+with them. A summarized version of these solutions is mentioned in the
+:ref:`Alternative Solutions and Recommendations` section, whereas a
+detailed description of utilizing these methods is provided in the
+`Appendix`__.
 
 
 
