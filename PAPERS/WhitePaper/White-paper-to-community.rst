@@ -695,21 +695,22 @@ where each channel is a different source for packaged software.
 Conda typically comes configured to install packages from the
 "defaults" channel, which supplies packages from the Anaconda,
 Inc. repository. Use of those packages may require a license from
-Anaconda, Inc. A common alternative channel is
-`conda-forge<https://conda-forge.org/>`__, which provides a large
-collection of community-supplied packages. Another commonly used
-community channel is `bioconda<https://bioconda.github.io/>`__.
+Anaconda, Inc. A common alternative channel is `conda-forge
+<https://conda-forge.org/>`__, which provides a large collection of
+community-supplied packages. Another commonly used community channel
+is `bioconda <https://bioconda.github.io/>`__.
 
 .. attention::
 
    According to their archival FAQ from `May 2025
    <https://web.archive.org/web/20250506034856/https://www.anaconda.com/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs>`__,
    we may not need to block Anaconda.com channels. However, ATWG had
-   conducted their own tests by blocking `repo.anaconda.com`__ and
-   found out that one can continue to install packages using the
-   bioconda channel or python packages in R using the `reticulate
-   package<https://rstudio.github.io/reticulate/>`__ with
-   "conda-forge" set as the default channel, without any issues.
+   conducted their own tests by blocking `Anaconda repository
+   <repo.anaconda.com>`__ and found out that one can continue to
+   install packages using the bioconda channel or python packages in R
+   using the `reticulate package
+   <https://rstudio.github.io/reticulate/>`__ with "conda-forge" set
+   as the default channel, without any issues.
    
 
 Important Update on the "defaults" Channel
