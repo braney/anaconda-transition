@@ -75,44 +75,59 @@ Introduction
 ------------
 
 Anaconda has long been a cornerstone of scientific and academic
-computing, offering a robust package management system and an ecosystem
-that simplifies the installation and maintenance of numerous open-source
-libraries. It is one of the most popular methods of automatically
-installing packages and interfacing with AI and other package-based
-technologies. However, in early 2024, Anaconda Inc. updated its `terms
-of service (ToS) <https://legal.anaconda.com/policies/en/>`__ to imply
-that it would no longer support free access to their base distribution
-or their *defaults* channel for non-commercial academic research
-institutions with more than 200 employees. The
-`reason <https://www.anaconda.com/pricing/terms-of-service-faqs>`__ for
+computing, offering a robust package management system and an
+ecosystem that simplifies the installation and maintenance of numerous
+open-source libraries. It is one of the most popular methods of
+automatically installing packages and interfacing with AI and other
+package-based technologies. However, in early 2024, Anaconda
+Inc. updated its `ToS <https://legal.anaconda.com/policies/en/>`__ to
+imply that it would no longer support free access to their base
+distribution or their *defaults* channel for non-commercial academic
+research institutions with more than 200 employees. The `reason
+<https://www.anaconda.com/pricing/terms-of-service-faqs>`__ for
 updating their ToS was to offset the significant costs associated with
 maintaining and hosting their platform and services. But, this update
-caused tremendous confusion and anxiety across academic communities that
-have historically relied upon Anaconda for their academic and research
-work.
+caused tremendous confusion and anxiety across academic communities
+that have historically relied upon Anaconda for their academic and
+research work.
 
 In September 2024, a few months after the widespread enforcement of
-these changes began, a `blog
-post <https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research>`__
-was published to clarify the intent of the update to the community. This
-blog post seemed to suggest that Anaconda would remain free for
-researchers at accredited universities, and that a revised update is
-forthcoming by year-end. However, the academic community continued to
-stay concerned, as blog posts are not legally binding (unlike ToS),
-which led to the creation of `Anaconda Transition Working
-Group <https://carcc.org/anaconda-transition-working-group/>`__ (ATWG).
+these changes began, a `blog post
+<https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research>`__
+was published to clarify the intent of the update to the
+community. This blog post seemed to suggest that Anaconda would remain
+free for researchers at accredited universities though universities
+cannot mirror Anaconda servers without a license, and that a revised
+update is forthcoming by the year-end. The Community Repository on
+`anaconda.org <https://anaconda.org>`__ is free to use for installing
+and updating packages from community channels like conda-forge, but
+certain mirrored channels (main, r, msys2, anaconda) remain subject to
+`Anaconda’s Terms of Service
+<https://www.anaconda.com/legal/terms/terms-of-service>`__. The
+Anaconda Repository at `repo.anaconda.com
+<https://repo.anaconda.com/>`__ is also free for individuals,
+universities, and companies with fewer than 200 employees, but larger
+non-academic organizations, including research institutions and
+national labs, must obtain a license to use it. However, the academic
+community continued to stay concerned, as blog posts are not legally
+binding (unlike a ToS), which led to the creation of `Anaconda
+Transition Working Group
+<https://carcc.org/anaconda-transition-working-group/>`__ (ATWG).
 
 ATWG comes under the umbrella of the nationwide Campus Research
-Computing Consortium (`CaRCC <https://carcc.org/>`__). It is formed to
-help the research computing and data (RCD) community ensure compliance
-with the changes proposed by Anaconda Inc. and to come up with
-alternatives for package management, if needed. ATWG has been meeting
-weekly since October 2024 to discuss the implications of Anaconda Inc's
-revised ToS and how to best communicate that to the academic community.
-To that end, the group has met with the Anaconda Inc. leadership a
-couple of times, in December 2024 and February 2025, to gain clarity on
-their ToS and ensure compliance in the face of the changes proposed by
-Anaconda Inc. The goals of the meetings included, but were not limited
+Computing Consortium (`CaRCC <https://carcc.org/>`__). It was formed
+to help the research computing and data (RCD) community ensure
+compliance with the changes proposed by Anaconda Inc., evaluate
+potential complications arising from the update, and to come up with
+alternatives for package management that could be used as possible
+workarounds. Since its inception in October 2024, ATWG has been
+meeting weekly to discuss the implications of Anaconda Inc's revised
+ToS and how to best communicate that to the academic community. To
+that end, the group has met with the Anaconda Inc. a few times, in
+December 2024, February 2025, and July 2025, to gain clarity on their
+ToS, ensure compliance in the face of the changes proposed by Anaconda
+Inc., and obtain updates on the ToS as pertaining to the academic
+community. The goals of the meetings included, but were not limited
 to:
 
 -  obtaining clarity on the `update to the
@@ -136,15 +151,15 @@ managing packages, channels, and environments within the Anaconda,
 Inc. ecosystem), a pre-configured "base" environment, and pre-configured
 package distribution channels.
 
-According to the updated ToS, downloading the distribution is covered by
-the ToS. However, the Anaconda channel that is maintained by the company
-is subject to ToS. Additionally, "conda" and its
-`repository <https://github.com/conda/conda>`__ is a Free and
-Open-Source Software (FOSS) with Berkley Source Distribution
-(`BSD <https://www.techtarget.com/whatis/definition/BSD-licenses#:~:text=As%20a%20low%20restriction%20and,was%20first%20written%20in%201969.>`__)
-license that is widely used in the Anaconda Distribution, Miniconda, and
-Miniforge installers. The primary issues associated with these change(s)
-include, but are not limited to:
+According to the updated ToS, downloading the distribution is covered
+by the ToS. However, the Anaconda channel that is maintained by the
+company is subject to ToS. Additionally, "conda" and its `repository
+<https://github.com/conda/conda>`__ is a Free and Open-Source Software
+(FOSS) with Berkley Source Distribution (`BSD
+<https://www.techtarget.com/whatis/definition/BSD-licenses#:~:text=As%20a%20low%20restriction%20and,was%20first%20written%20in%201969.>`__)
+license that is widely used in the Anaconda Distribution, Miniconda,
+and Miniforge installers. At the time, the primary issues associated
+with these change(s) included, but were not limited to:
 
 -  Licensing Costs: Institutions with more than 200 employees must now
    pay for a commercial license to use Anaconda.
@@ -164,31 +179,31 @@ include, but are not limited to:
    institutions and research computing teams should manage software
    environments.
 
-To address these challenges, ATWG has initiated several actions:
+To address these challenges, ATWG had initiated several actions:
 
--  Communication with Anaconda Inc.: As noted above, we have had two
-   meetings with Anaconda Inc. leadership and representatives. The main
-   goals of those meetings were to understand their licensing model
-   better and to advocate for equitable treatment of academic
-   institutions.
--  Internal collaboration: Institutions within CaRCC are sharing their
+- Communication with Anaconda Inc.: As noted above, we had three
+   meetings with Anaconda Inc. leadership and representatives, in
+   addition to a few exchanges over email. The main goals of those
+   meetings were to understand their licensing model better and to
+   advocate for equitable treatment of academic institutions.
+- Internal collaboration: Institutions within CaRCC shared their
    experiences and strategies for adapting to the new licensing model,
-   including alternative solutions. ATWG has reached out to CaRCC
+   including alternative solutions. ATWG had reached out to CaRCC
    community members in the form of a user survey to understand their
    usage and the level of dependence on Anaconda.
--  Exploring alternatives: Discussions are underway to evaluate
-   alternative tools and approaches for managing software environments.
-   This includes exploring open-source installers, such as Miniforge,
-   and utilizing package managers like
-   `Mamba <https://mamba.readthedocs.io/en/latest/>`__,
-   `Pip <https://packaging.python.org/en/latest/key_projects/#pip>`__,
-   `Pixi <https://pixi.sh/latest/>`__, and/or
-   `UV <https://docs.astral.sh/uv/>`__. Additionally, looking into
-   containerization platforms like
-   `Singularity <https://docs.sylabs.io/guides/latest/user-guide/>`__ or
-   `Docker <https://www.docker.com/>`__ could be a possible alternative
-   as long as they employ open-source installers or installing packages
-   from scratch.
+- Exploring alternatives: Discussions were carried out to evaluate
+   alternative tools and approaches for managing software
+   environments. This included exploring open-source installers, such
+   as Miniforge, and utilizing package managers like `Mamba
+   <https://mamba.readthedocs.io/en/latest/>`__, `Pip
+   <https://packaging.python.org/en/latest/key_projects/#pip>`__,
+   `Pixi <https://pixi.sh/latest/>`__, and/or `UV
+   <https://docs.astral.sh/uv/>`__. Additionally, containerization
+   platforms like `Singularity
+   <https://docs.sylabs.io/guides/latest/user-guide/>`__ or `Docker
+   <https://www.docker.com/>`__ as possible alternatives to package
+   management, as long as they employed open-source installers, and
+   installing packages from scratch were explored.
 
 
 
