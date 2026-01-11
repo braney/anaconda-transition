@@ -181,17 +181,17 @@ with these change(s) included, but were not limited to:
 
 To address these challenges, ATWG had initiated several actions:
 
-- Communication with Anaconda Inc.: As noted above, we had three
+-  Communication with Anaconda Inc.: As noted above, we had three
    meetings with Anaconda Inc. leadership and representatives, in
    addition to a few exchanges over email. The main goals of those
    meetings were to understand their licensing model better and to
    advocate for equitable treatment of academic institutions.
-- Internal collaboration: Institutions within CaRCC shared their
+-  Internal collaboration: Institutions within CaRCC shared their
    experiences and strategies for adapting to the new licensing model,
    including alternative solutions. ATWG had reached out to CaRCC
    community members in the form of a user survey to understand their
    usage and the level of dependence on Anaconda.
-- Exploring alternatives: Discussions were carried out to evaluate
+-  Exploring alternatives: Discussions were carried out to evaluate
    alternative tools and approaches for managing software
    environments. This included exploring open-source installers, such
    as Miniforge, and utilizing package managers like `Mamba
