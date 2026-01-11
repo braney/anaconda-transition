@@ -916,7 +916,7 @@ specify different package paths using R_LIBS_USER / .libPaths() which
 offers the functionality of virtual environments.
 
 
-Other alternatives
+Other Alternatives
 ------------------
 
 The primary motivating feature for many researchers from the beginning
@@ -929,7 +929,7 @@ adoption of build-from-source package management (i.e. Spack) and
 containerization (e.g., Apptainer).
 
 Spack
-^^^^^
+''''''
 
 Spack is an HPC-centric package manager developed by the Department of
 Energy (DoE) national labs which allows users to instantiate one or
