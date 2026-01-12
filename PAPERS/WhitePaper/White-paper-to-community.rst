@@ -862,16 +862,13 @@ Python version as the one used to create the Python environment. Other
 tools exist to overcome the latter limitation, such as conda, mamba,
 Poetry/Pipenv and UV.
 
-References:
-^^^^^^^^^^^
+Resources:
+^^^^^^^^^^
 
-`Understanding Conda and Pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
-
-`Pip vs Conda: A Guide to Managing Python Packages for Data Scientists <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/>`__
-
-`Pip vs Conda: key differences <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#pip-vs-conda-key-differences>`__
-
-`Install packages in a virtual environment using pip and venv <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>`__
+- `Understanding Conda and Pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
+- `Pip vs Conda: A Guide to Managing Python Packages for Data Scientists <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/>`__
+- `Pip vs Conda: key differences <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#pip-vs-conda-key-differences>`__
+- `Install packages in a virtual environment using pip and venv <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>`__
 
 Checking for Anaconda Repository Dependencies
 '''''''''''''''''''''''''''''''''''''''''''''
