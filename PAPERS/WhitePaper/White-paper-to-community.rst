@@ -866,11 +866,10 @@ References:
 ^^^^^^^^^^^
 
 `Understanding Conda and Pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
-`Pip vs Conda: A Guide to Managing Python Packages for Data Scientists <
 
-https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#pip-vs-conda-key-differences
-https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/
-https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#:~:text=Pip%20vs%20Conda%3A%20Key%20Differences&text=Pip%20installs%20packages%20from%20the,Anaconda%20distribution%20and%20other%20channels.>`__
+`Pip vs Conda: A Guide to Managing Python Packages for Data Scientists <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/>`__
+
+`Pip vs Conda: key differences <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/#pip-vs-conda-key-differences>`__
 
 `Install packages in a virtual environment using pip and venv <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>`__
 
