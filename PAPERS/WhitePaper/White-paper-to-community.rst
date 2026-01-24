@@ -625,6 +625,10 @@ We propose the following actions to mitigate the impact:
 Appendix 
 ---------
 
+Scripts and Tools
+'''''''''''''''''''''
+The Anaconda Transition Working Group set up a directory for scripts and tools to assist with institutions in their migration from Anaconda commercial channels. This has been spun off into a forked repository so that the community can continue to improve and contribute to those efforts. https://github.com/jacreech/anaconda-transition-community-scripts
+
 Open-source Solutions
 '''''''''''''''''''''
 
@@ -634,6 +638,7 @@ should an insitution or a research team decide to go the open-source
 route.
 
 - Miniforge (pulls from conda-forge by default)
+- Pixi (a modern alternative to miniforge)
 - Pip (pulls from PyPI)
 - Pip + venv
 - Poetry / Pipenv / uv (pulls from multiple sources)
@@ -959,3 +964,8 @@ researchers did not have admin rights to the computing systems they
 run on, and they wanted more than one distinct instance of the
 software stack. Containers give them this, entirely obviating the
 use-case for package managers like Anaconda.
+
+Pixi
+''''''''''
+Pixi is a fast and modern package manager that handles the same types of environments as Miniforge. It includes other features, but one of its main functions is to act as a package manager for conda environments. A new installation includes conda-forge as the default channel. Like Miniforge, it includes support for other conda channels, pip, etc. 
+
