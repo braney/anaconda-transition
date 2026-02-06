@@ -237,7 +237,7 @@ organizations faced a cascade of practical and financial hurdles:
       
 3. Transition Overhead
 
-   Moving away from Anaconda-whether to conda-forge/Miniconda, Spack,
+   Moving away from Anaconda-whether to conda-forge/Miniforge, Spack,
    or containers-requires substantial IT staff time, retraining of
    faculty and students, and revalidation of research pipelines. One
    peer university estimated that piloting a Spack migration consumed
@@ -470,6 +470,12 @@ for policy development and review may include:
    risk.
 
 **4. Secure Environment Cluster:**
+
+.. attention::
+
+   We might mention `Anaconda Business
+   <https://www.anaconda.com/guides/the-ultimate-guide-to-open-source-security-with-python-and-r#:~:text=Anaconda%20Business%20is%20an%20enterprise%2Dgrade%20package%20repository,do%20not%20comply%20with%20your%20legal%20requirements.>`__
+   for secure environments.
 
 Institutions operating a secure environment cluster would need to
 evaluate the security level of their cluster to decide whether the
@@ -736,11 +742,12 @@ Additional recommendations if using conda-forge
 
 - Using conda-forge, if you don't already have conda installed
 
-  Install "Miniforge" instead of installing the Anaconda distribution.
+  Install "Miniforge" instead of installing the Anaconda distribution
+  or Miniconda.
   Miniforge is a version of conda that is pre-configured to only
   access the "conda-forge" channel. See
   https://conda-forge.org/download/ for this option. The downside of
-  Miniforge is that unlike the Anaconda distribution, Miniforge does
+  Miniforge is that unlike the standard Anaconda distribution, Miniforge does
   not create a rich "base" environment with 300+ packages to get you
   started. Rather, Miniforge’s “base” environment is intentionally
   minimalistic and is meant to serve the functionality of the
@@ -761,7 +768,7 @@ Additional recommendations if using conda-forge
 
 - Using conda-forge, if you already have conda installed
 
-  You can see which channels it is configured to use like so:
+  You can see which channels conda is configured to use like so:
 
   .. code-block:: console
  
@@ -773,7 +780,7 @@ Additional recommendations if using conda-forge
 
   .. code-block:: console
  
-   $ conda config --append channels conda-forge
+   $ conda config --prepend channels conda-forge
    $ conda config --remove channels defaults
    $ conda config --show channels
    channels:
@@ -782,7 +789,7 @@ Additional recommendations if using conda-forge
 "Conda-forge" is a large community, but may not have every package you
 need.  If you are interested in a particular package, you can find if
 any channels offer it by searching for it on the anaconda.org website
-(note: not the same as anaconda.com). If you find a channel you want
+(not the same as anaconda.com). If you find a channel you want
 conda to install packages from, you can add it to the conda
 configuration as was done in the above example.
 
