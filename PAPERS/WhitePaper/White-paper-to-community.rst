@@ -80,14 +80,13 @@ caused tremendous confusion and anxiety across academic communities
 that have historically relied upon Anaconda for their academic and
 research work.
 
-In September 2024, a few months after the widespread enforcement of
-these changes began [??????? WHAT TIPE OF ENFORCEMENT????? WE KNOW OF FEW CASES IN WHICH ANACONDA REACHED OUT BUT I AM NOT SURE WE CAN SAY IT WAS WIDESPREAD], a `blog post
+In September 2024, a few months after the aforementioned changes to the TOS, a `blog post
 <https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research>`__
 was published to clarify the intent of the update to the
 community. This blog post seemed to suggest that Anaconda would remain
 free for researchers at accredited universities though universities
 cannot mirror Anaconda servers without a license, and that a revised
-update is forthcoming by the year-end. The Community Repository on
+update was forthcoming by the year-end. The Community Repository on
 `anaconda.org <https://anaconda.org>`__ is free to use for installing
 and updating packages from community channels like conda-forge, but
 certain mirrored channels (main, r, msys2, anaconda) remain subject to
@@ -629,19 +628,24 @@ Open-source Solutions
 Below is a list of open-source options that the ATWG has put
 together. This is not a complete list but is a good starting point
 should an insitution or a research team decide to go the open-source
-route.
+route. Some of the solutions do not represent a full alternative to Anaconda.
 
-- Miniforge (pulls from conda-forge by default)
-- Pixi (a modern alternative to miniforge)
+- Conda/Miniconda (package manager behind Anaconda, but fully open‑source when used outside Anaconda’s distribution)
+- Miniforge/Mambaforge (pulls from conda-forge by default)
+- Mamba (drop‑in replacement for Conda written in C++, bundled with Miniforge as Mambaforge)
+- Pixi (Rust‑based package and environment manager, a modern alternative to miniforge with seamless mixing of PyPI + Conda packages)
+- uv (Rust‑based, ultra‑fast Python package, environment and project manager)
 - Pip (pulls from PyPI)
-- Pip + venv
-- Poetry / Pipenv / uv (pulls from multiple sources)
+- Pip + venv/virtualenv
+- pipx (Not a full environment manager, installs Python CLI tools in isolated environments)
+- Poetry (project dependency and packaging manager)
+- Pipenv (Uses Pipfile + Pipfile.lock for reproducible environments)
 
   
 Conda vs Mamba
 ''''''''''''''
 
-`Conda <https://github.com/conda/conda>`__ and `Mamba
+`Conda <https://github.com/conda/conda>`__ and `Mamba`
 <https://github.com/mamba-org/mamba>`__ are package managers and
 command-line tools, they can be used mostly interchangeably as Mamba
 was created as a drop-in replacement for Conda (with identical
