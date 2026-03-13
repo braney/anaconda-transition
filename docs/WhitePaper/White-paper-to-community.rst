@@ -37,27 +37,49 @@ White paper to researchers, research computing facilitators, and institutional l
 Executive Summary
 -----------------
 
-When `Anaconda Inc. <https://www.anaconda.com/>`__ introduced its revised Terms of Service (ToS) in `Spring 2024 <https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/>`__, the restrictions and licensing model described at that time posed a significant threat to our university’s research infrastructure. For years, Anaconda’s Python distribution and package‑management platform had been freely available for academic use—both on local systems and across HPC clusters—serving as the foundation for scientific workflows in many departments. The newly outlined limitations and license‑fee requirements risked imposing substantial financial burdens, destabilizing established computational environments, and hindering collaborative research efforts ranging from individual lab pipelines to campus‑wide initiatives.
+For the Community
+~~~~~~~~~~~~~~~~~
 
-At a Campus Research Computing Consortium (CaRCC) meeting in Fall 2024
-(?), representatives from national laboratories, DoE facilities, and
-peer institutions underscored shared concerns regarding these
-revisions, such as, which institutions (and which categories of users
-– scholarly vs. research, on-campus vs. external collaborators) would
-qualify for a free or reduced-fee academic tier, or how would
-individual researchers submit proof of affiliation, or can the
-university secure a blanket exemption, or how will site-wide
-installations on shared systems be licensed, particularly when NSF- or
-DoE-funded collaborators without formal university appointments also
-require access.
+The ``conda`` package manager is free and open-source — it is not going away.
+The licensing concerns are specifically about packages hosted in Anaconda
+Inc.'s "defaults" channel and their distribution platform. **For most users,
+the simplest path forward is to use** `conda-forge <https://conda-forge.org/>`__
+**as your package channel** (e.g., by installing
+`Miniforge <https://conda-forge.org/download/>`__ instead of the Anaconda
+distribution). Conda-forge is a large, community-maintained collection of
+packages that does not fall under Anaconda's Terms of Service. You can continue
+using ``conda`` (or ``mamba``) exactly as before — just sourcing packages from
+conda-forge instead of "defaults."
 
-At the time, Anaconda's team was drafting a standalone academic policy
-and had invited institutions to coordinate use-case details and a
-rollout timeline. The negotiation window has now closed. Moving
-forward, we will need to adapt to the finalized terms while exploring
-institutional solutions to ensure continued, cost-effective access to
-the Anaconda ecosystem, preserve the integrity of our teaching labs
-and research clusters, and sustain our science leadership.
+That said, Anaconda Inc. does provide value beyond just hosting packages.
+Their curated "defaults" channel undergoes additional vetting, which may matter
+for institutions with stringent security or reproducibility requirements.
+Organizations in regulated or high-security environments may find Anaconda's
+commercial offerings — including verified package provenance and enterprise
+support — worth evaluating. For everyone else, conda-forge covers the vast
+majority of scientific computing needs at no cost and with no licensing
+concerns.
+
+For Institutional Leadership
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Anaconda Inc.'s revised `Terms of Service
+<https://www.anaconda.com/legal/terms/terms-of-service>`__, effective July
+2025, introduce new compliance obligations for academic institutions. While
+Anaconda remains free for accredited educational entities under their `Academic
+Policy <https://www.anaconda.com/legal/terms/academic>`__, institutions must
+now proactively secure an Eligible Academic Institution (EAI) agreement —
+renewed annually — and are held responsible for ensuring all users comply with
+the terms. Key risk areas include restrictions on embedding Anaconda packages
+in containers, mirroring repositories, and providing access to third parties
+(e.g., external collaborators), all of which may require a paid license even
+under the academic exemption. The terms can be modified with as little as 90
+days' notice, and it falls to the institution to monitor for changes. Given
+this evolving landscape, the working group recommends that institutions evaluate
+open-source alternatives (such as Miniforge with conda-forge) to reduce
+compliance exposure, while engaging with peer institutions through `CaRCC
+<https://carcc.org/anaconda-transition-working-group/>`__ to advocate for
+clearer, more stable academic terms.
 
 
 Introduction
