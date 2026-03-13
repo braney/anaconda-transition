@@ -17,8 +17,4 @@ documentation for details.
 
    WhitePaper/White-paper-to-community
  
-   PaperA_users-researchers/White-paper-to-users-researchers
-
-   PaperB_institutional-leadership/White-paper-to-institutional-leadership
-
    FAQ/FAQs
