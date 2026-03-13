@@ -29,7 +29,7 @@ White paper to researchers, research computing facilitators, and institutional l
  :sup:`10` University of Alabama at Birmingham.
 
 :Version: 1.0
-:Date: 2026-01-XX
+:Date: 2026-03-XX
 
 .. attention:: NB to change actual date
 
@@ -37,18 +37,7 @@ White paper to researchers, research computing facilitators, and institutional l
 Executive Summary
 -----------------
 
-`Anaconda Inc. <https://www.anaconda.com/>`__ revised its Terms of
-Service (ToS) in the `Spring of 2024
-<https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/>`__
-that poses potential risks to our university's research
-infrastructure. Anaconda's Python distribution and package-management
-platform has long been available at no cost for academic use - locally
-and on HPC clusters – underpinning the majority of scientific
-workflows across multiple departments. The current restrictions and
-license-fee requirements introduces significant financial burdens,
-disrupt established computational environments, and undermine
-collaborative projects – from individual lab pipelines to cross-campus
-consortium efforts.
+When `Anaconda Inc. <https://www.anaconda.com/>`__ introduced its revised Terms of Service (ToS) in `Spring 2024 <https://web.archive.org/web/20240808124157/https://legal.anaconda.com/policies/en/>`__, the restrictions and licensing model described at that time posed a significant threat to our university’s research infrastructure. For years, Anaconda’s Python distribution and package‑management platform had been freely available for academic use—both on local systems and across HPC clusters—serving as the foundation for scientific workflows in many departments. The newly outlined limitations and license‑fee requirements risked imposing substantial financial burdens, destabilizing established computational environments, and hindering collaborative research efforts ranging from individual lab pipelines to campus‑wide initiatives.
 
 At a Campus Research Computing Consortium (CaRCC) meeting in Fall 2024
 (?), representatives from national laboratories, DoE facilities, and
@@ -92,7 +81,7 @@ that have historically relied upon Anaconda for their academic and
 research work.
 
 In September 2024, a few months after the widespread enforcement of
-these changes began, a `blog post
+these changes began [??????? WHAT TIPE OF ENFORCEMENT????? WE KNOW OF FEW CASES IN WHICH ANACONDA REACHED OUT BUT I AM NOT SURE WE CAN SAY IT WAS WIDESPREAD], a `blog post
 <https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research>`__
 was published to clarify the intent of the update to the
 community. This blog post seemed to suggest that Anaconda would remain
@@ -110,7 +99,7 @@ universities, and companies with fewer than 200 employees, but larger
 non-academic organizations, including research institutions and
 national labs, must obtain a license to use it. However, the academic
 community continued to stay concerned, as blog posts are not legally
-binding (unlike a ToS), which led to the creation of `Anaconda
+binding (unlike ToS --which were eventually updated in July, 2025), which led to the creation of `Anaconda
 Transition Working Group
 <https://carcc.org/anaconda-transition-working-group/>`__ (ATWG).
 
@@ -153,17 +142,17 @@ package distribution channels.
 
 According to the updated ToS, downloading the distribution is covered
 by the ToS. However, the Anaconda channel that is maintained by the
-company is subject to ToS. Additionally, "conda" and its `repository
+company is subject to the licensing restrictions described in the ToS. Additionally, "conda" and its `repository
 <https://github.com/conda/conda>`__ is a Free and Open-Source Software
 (FOSS) with Berkley Source Distribution (`BSD
 <https://www.techtarget.com/whatis/definition/BSD-licenses#:~:text=As%20a%20low%20restriction%20and,was%20first%20written%20in%201969.>`__)
 license that is widely used in the Anaconda Distribution, Miniconda,
 and Miniforge installers. At the time, the primary issues associated
-with these change(s) included, but were not limited to:
+with the changes in the TOS included, but were not limited to:
 
 -  Licensing Costs: Institutions with more than 200 employees must now
    pay for a commercial license to use Anaconda.
--  Compliance: Institutions are receiving notices from Anaconda about
+-  Compliance: Institutions were receiving notices from Anaconda about
    non-compliance with the new ToS. See `Anaconda puts the squeeze on
    data scientists • The
    Register <https://www.theregister.com/2024/08/08/anaconda_puts_the_squeeze_on/>`__.
@@ -291,11 +280,11 @@ with Panel
 <https://www.anaconda.com/blog/a-new-and-simple-way-to-publish-your-data-applications>`__.
 
 In July 2025, Anaconda Inc. published their `revised
-ToS<https://www.anaconda.com/legal/terms/terms-of-service>`__,
+ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__,
 according to which Anaconda does not require academic institutions and
 universities to purchase a commercial fee license for their installers
 or for access to their `package
-repository<https://repo.anaconda.com/>`__, regardless of their size,
+repository <https://repo.anaconda.com/>`__, regardless of their size,
 when used in course curricula, including teaching, learning, and
 research at accredited educational institutions worldwide. The policy
 is applicable to universities with 200 or more employees and the
@@ -324,8 +313,7 @@ urge institutions to contact their `partner team
 partnerships@anaconda.com should the need to pursue an embedded use
 case arises in academia. This is different from what was mentioned in
 their archival FAQ from `August 13, 2024
-<https://web.archive.org/web/20250506042444/https://www.anaconda.com/web/20250506042444/https://www.anaconda.com/pricing/terms-of-service-faqs>`__
-(not a valid URL anymore), where no such requirement was stated for
+<https://web.archive.org/web/20240813115338/https://www.anaconda.com/pricing/terms-of-service-faqs>`__, where no such requirement was stated for
 any kind of academic use including embedding, mirroring, or third
 party access.
 
@@ -713,7 +701,7 @@ is `bioconda <https://bioconda.github.io/>`__.
 .. attention::
 
    According to their archival FAQ from `May 2025
-   <https://web.archive.org/web/20250506034856/https://www.anaconda.com/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs>`__,
+   <https://web.archive.org/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs>`__,
    we may not need to block Anaconda.com channels. However, ATWG had
    conducted their own tests by blocking `Anaconda repository
    <https://repo.anaconda.com>`__ and found out that one can continue to
@@ -721,7 +709,7 @@ is `bioconda <https://bioconda.github.io/>`__.
    using the `reticulate package
    <https://rstudio.github.io/reticulate/>`__ with "conda-forge" set
    as the default channel, without any issues.
-   
+
 
 Important Update on the "defaults" Channel
 ''''''''''''''''''''''''''''''''''''''''''
@@ -802,15 +790,8 @@ configuration as was done in the above example.
 Overview Conda vs Pip
 ''''''''''''''''''''' 
 
-.. attention:: ADD section to the fact that many project are now
-               putting effort into creating wheels that allows for an
-               easy installation of packages
+Many projects are now putting effort into creating wheels that allows for an easy installation of packages (e.g., scipy, torch, kafka, etc.) across many Linux distributions (see for example: `Building manylinux Python wheels <https://opensource.com/article/19/2/manylinux-python-wheels>`__)>
 	       
-               - Call out a few examples: databases / in cases you
-                 need to install dependencies (kafka stream / official
-                 kafka client works from conda but compiling from
-                 scratch can be intensive)
-		 
 
 Pip is appropriate for:
 
