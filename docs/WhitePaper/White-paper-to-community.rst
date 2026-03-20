@@ -37,6 +37,14 @@ White paper to researchers, research computing facilitators, and institutional l
 Executive Summary
 -----------------
 
+When Anaconda Inc. introduced revised Terms of Service in Spring 2024,
+the changes created immediate uncertainty for academic research
+computing. Institutions that rely on shared local systems and HPC
+clusters faced concerns about compliance scope, budget exposure, and
+potential disruption to established collaborative workflows. The
+guidance below reflects that context while focusing on practical,
+current paths forward.
+
 For the Community
 ~~~~~~~~~~~~~~~~~
 
