@@ -35,7 +35,7 @@ Yes. Anaconda is free for all educational institutions—even those with 200 or 
 Q: Are there scenarios where an educational institution still requires a paid license?
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Yes. A paid license is always required for any individual or entity—even an educational entity—that is embedding, mirroring, or providing third parties access to Anaconda products. This specific clause is highly problematic for data center software maintainers because central installations might be seen as providing third-party access, and creating/sharing containers might be seen as embedding the software.
+Yes. A paid license is always required for any individual or entity—even an educational entity—that is embedding, mirroring, or providing third parties access to Anaconda products. *This specific clause is highly problematic for data center software maintainers because central installations might be seen as providing third-party access, and creating/sharing containers might be seen as embedding the software.*
 
 Compliance and Operational Challenges
 -------------------------------------
@@ -51,7 +51,7 @@ Affiliation Proof: Can the institution provide a single "proof of affiliation" t
 Q: How do the ToS impact sharing research through containers (Docker/Apptainer)?
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Anaconda Inc.'s Terms of Service prevent "embedding" (incorporating Anaconda Content into another product or service) and prevent "distribut[ing] the Platform or any Offering to anyone other than your Users". Sharing a container image (like Docker or Apptainer) that includes restricted Anaconda Inc. packages may be considered "embedding" or "distribution" outside the originating institution, potentially violating the terms. The only solution identified is to ensure that restricted Anaconda Inc. packages are not included in any containers.
+Anaconda Inc.'s Terms of Service prevent "embedding" (incorporating Anaconda Content into another product or service) and prevent "distribut[ing] the Platform or any Offering to anyone other than your Users". *Sharing a container image (like Docker or Apptainer) that includes restricted Anaconda Inc. packages may be considered "embedding" or "distribution" outside the originating institution, potentially violating the terms.* The only solution identified is to ensure that restricted Anaconda Inc. packages are not included in any containers.
 
 Q: How can I check if my existing environments use licensed packages from Anaconda?
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
