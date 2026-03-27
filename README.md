@@ -9,6 +9,47 @@ There are two white papers (here named "A" and "B").
 - **White Paper B:** Institutional Leadership
 
 
+TLDR;
+-----
+
+### For the Community
+
+The `conda` package manager is free and open-source — it is not going away. The licensing
+concerns are specifically about packages hosted in Anaconda Inc.'s "defaults" channel and
+their distribution platform. **For most users, the simplest path forward is to use
+[conda-forge](https://conda-forge.org/) as your package channel** (e.g., by installing
+[Miniforge](https://conda-forge.org/download/) instead of the Anaconda distribution).
+Conda-forge is a large, community-maintained collection of packages that does not fall
+under Anaconda's Terms of Service. You can continue using `conda` (or `mamba`) exactly
+as before — just sourcing packages from conda-forge instead of "defaults."
+
+That said, Anaconda Inc. does provide value beyond just hosting packages. Their curated
+"defaults" channel undergoes additional vetting, which may matter for institutions with
+stringent security or reproducibility requirements. Organizations in regulated or
+high-security environments may find Anaconda's commercial offerings — including verified
+package provenance and enterprise support — worth evaluating. For everyone else,
+conda-forge covers the vast majority of scientific computing needs at no cost and with
+no licensing concerns.
+
+### For Institutional Leadership
+
+Anaconda Inc.'s revised [Terms of Service](https://www.anaconda.com/legal/terms/terms-of-service),
+effective July 2025, introduce new compliance obligations for academic institutions.
+While Anaconda remains free for accredited educational entities under their
+[Academic Policy](https://www.anaconda.com/legal/terms/academic), institutions must now
+proactively secure an Eligible Academic Institution (EAI) agreement — renewed annually —
+and are held responsible for ensuring all users comply with the terms. Key risk areas
+include restrictions on embedding Anaconda packages in containers, mirroring repositories,
+and providing access to third parties (e.g., external collaborators), all of which may
+require a paid license even under the academic exemption. The terms can be modified with
+as little as 90 days' notice, and it falls to the institution to monitor for changes.
+Given this evolving landscape, the working group recommends that institutions evaluate
+open-source alternatives (such as Miniforge with conda-forge) to reduce compliance
+exposure, while engaging with peer institutions through
+[CaRCC](https://carcc.org/anaconda-transition-working-group/) to advocate for
+clearer, more stable academic terms.
+
+
 Building
 --------
 
