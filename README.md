@@ -1,13 +1,10 @@
-Anaconda-Transition White Papers
-================================
+Anaconda-Transition White Paper
+===============================
 
 This repository holds the source and build tooling for the CaRCC Anaconda Transition Working
-Group's project to document changes to Anaconda's Terms of Service from 2024-2025.
-There are two white papers (here named "A" and "B").
-
-- **White Paper A:** Staff/Researchers
-- **White Paper B:** Institutional Leadership
-
+Group's white paper documenting changes to Anaconda's Terms of Service from 2024-2025.
+The paper is written for researchers, research computing facilitators, and institutional
+leadership. A companion FAQ is also included.
 
 TLDR;
 -----
@@ -54,20 +51,21 @@ Building
 --------
 
 The documents are compiled to PDF outputs from RestructuredText source via LaTeX using the
-Sphinx build system. The `PAPERS` directory contains the source and build system for this.
-To build the documents you need to run `make latexpdf` with suitable dependencies satisfied
-(i.e., Sphinx and LaTeX). Assuming you have LaTeX available on your system, the
-[uv](https://astral.sh/uv) package manager is a good approach to run the build:
+Sphinx build system. The `docs/` directory contains the source and build system for this.
+To build the documents you need to run `make latexpdf` from within `docs/` with suitable
+dependencies satisfied (i.e., Sphinx and LaTeX). Assuming you have LaTeX available on your
+system, the [uv](https://astral.sh/uv) package manager is a good approach to run the build:
 
 ```sh
-uvx --from sphinx make latexpdf
+cd docs
+uvx --from sphinx-rtd-theme --with sphinx make latexpdf
 ```
 
 
 Releases
 --------
 
-These documents are continually built using a GitHub Action the compiles the PDFs.
+These documents are continually built using a GitHub Action that compiles the PDFs.
 These assets are attached to each release here in the repo.
 These receive their own DOI via the CaRCC Zenodo publishing platform.
 
@@ -99,7 +97,7 @@ Commit your changes with a useful commit message.
 
 ```sh
 git add --all
-git commit -m '[Paper A] Fix description of XYZ'
+git commit -m 'Fix description of XYZ'
 ```
 
 Make sure your branch is up-to-date.
@@ -116,4 +114,7 @@ git push origin main
 ```
 
 Now you can open a PR by visiting the main repository and selecting your fork.
+
+The `Misc/` directory contains community-contributed scripts, notes, and tips (including
+migration helper scripts in `Misc/tools/`) that are provided as-is.
 
