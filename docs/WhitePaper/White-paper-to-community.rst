@@ -949,6 +949,23 @@ available within R itself via `renv
 specify different package paths using R_LIBS_USER / .libPaths() which
 offers the functionality of virtual environments.
 
+Block Anaconda Repo
+'''''''''''''''''''
+
+As a sanity check, ATWG conducted a few tests, on nodes belonging to
+different HPC clusters, to install Python and R packages using
+open-source channels after blocking `Anaconda repo
+<repo.anaconda.com>`__. These tests were conducted on nodes running
+IPv6-only or IPv4-only environments with NAT/DNS64 support. Host
+firewall was enabled using `nftables` and IPv6 addresses or `iptables`
+and IPv4 addresses for `repo.anaconda.com` as resolved by the
+respective campus' DNS. Following the block, we conducted tests on
+installing packages such as, tensorflow, samtools, and bcftools using
+open-source channels, conda-forge and bioconda. For R, we conducted
+the test after loading the `reticulate` library and installing Python
+packages using `py_install`, `virtualenv_install`, and `conda_install`
+on an R shell. 
+
 
 Other Alternatives
 ''''''''''''''''''
