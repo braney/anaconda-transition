@@ -653,9 +653,16 @@ We propose the following actions to mitigate the impact:
 Appendix 
 ---------
 
+.. _Scripts and Tools:
+
 Scripts and Tools
 '''''''''''''''''''''
-The Anaconda Transition Working Group set up a directory for scripts and tools to assist with institutions in their migration from Anaconda commercial channels. This has been spun off into a forked repository so that the community can continue to improve and contribute to those efforts. https://github.com/jacreech/anaconda-transition-community-scripts
+
+The Anaconda Transition Working Group set up a directory for scripts
+and tools to assist with institutions in their migration from Anaconda
+commercial channels. This has been spun off into a forked repository
+so that the community can continue to improve and contribute to those
+efforts. https://github.com/jacreech/anaconda-transition-community-scripts
 
 Open-source Solutions
 '''''''''''''''''''''
@@ -949,26 +956,24 @@ available within R itself via `renv
 specify different package paths using R_LIBS_USER / .libPaths() which
 offers the functionality of virtual environments.
 
-Block Anaconda Repo
-'''''''''''''''''''
+** Block Anaconda Repo
 
 As a sanity check, ATWG conducted a few tests, on nodes belonging to
 different HPC clusters, to install Python and R packages using
 open-source channels after blocking `Anaconda repo
 <repo.anaconda.com>`__. These tests were conducted on nodes running
 IPv6-only or IPv4-only environments with NAT/DNS64 support. Host
-firewall was enabled using `nftables` and IPv6 addresses or `iptables`
-and IPv4 addresses for `repo.anaconda.com` as resolved by the
-respective campus' DNS. Following the block, we conducted tests on
-installing packages such as, tensorflow, samtools, and bcftools using
-open-source channels, conda-forge and bioconda. For R, we conducted
-the test after loading the `reticulate` library and installing Python
-packages using `py_install`, `virtualenv_install`, and `conda_install`
-on an R shell. 
+firewall was enabled using ``nftables`` and IPv6 addresses or
+``iptables`` and IPv4 addresses for ``repo.anaconda.com`` as resolved
+by the respective campus' DNS. Following the block, we conducted tests
+on installing packages such as, tensorflow, samtools, and bcftools
+using open-source channels, conda-forge and bioconda. For R, we
+conducted the test after loading the ``reticulate`` library and
+installing Python packages using ``py_install``,
+``virtualenv_install``, and ``conda_install`` on an R shell.
 
 
-Other Alternatives
-''''''''''''''''''
+** Other Alternatives
 
 The primary motivating feature for many researchers from the beginning
 for the user of a tool like Anaconda was the ability to materialize a
@@ -979,8 +984,7 @@ alleviate the need for this in the first place are improvements and
 adoption of build-from-source package management (i.e. Spack) and
 containerization (e.g., Apptainer).
 
-Spack
-'''''
+**1. Spack
 
 Spack is an HPC-centric package manager developed by the Department of
 Energy (DoE) national labs which allows users to instantiate one or
@@ -996,8 +1000,7 @@ instances can be a big lift but once done users can benefit from a
 shared build-cache and mirroring of packages to accelerate
 installation of packages.
 
-Containers
-''''''''''
+**2. Containers
 
 Entirely separate from the present discussion is the modern quest for
 reproducibility and reusability of research software driving the
