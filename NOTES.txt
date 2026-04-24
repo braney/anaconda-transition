@@ -1,0 +1,61 @@
+##################
+## INSTRUCTIONS ##
+##################
+
+# ---------------------#
+# Clone the repository #
+# ---------------------#
+# if working from windows consider using WSL2 which is unix-like
+# or use the methods suggested below to activate a python virtual env in windows
+git clone git@github.com:CaRCC/anaconda-transition.git
+cd anaconda-transition/
+git branch -a  # you should be on `main`
+git checkout sandbox  # switch to `sandbox`
+git branch -a    # you should be on `sandbox`
+# git checkout -b sandbox   # create and switch to local sandbox branch
+git  checkout sandbox  # switch to `sandbox` branch
+
+# ------------------------------------------- #
+# Create the virtual environment with Sphinx. #
+# This part needs to be done only once        #
+# (except for the venv activation step that   #
+# will be required in every new session.)     #
+# ------------------------------------------- #
+python3 -m venv venv  # first time ONLY create virtual environment
+source ./venv/bin/activate  # on unix-like system activate the env
+# on windows systems:
+## windows command promt use: `venv\Scripts\activate.bat`
+## windows powershell use: `.\venv\Scripts\Activate.ps1`
+## alternatively use WSL which works is unix-like (and therefore there use: `source ./venv/bin/activate`)
+## other alternative (from Lev Gorenstein): `uv venv --seed --python=3.12 venv` 
+# venv added to .gitignore
+# *~ added to .gitignore for use of emacs
+pip install --upgrade pip   # update pip
+pip install -r requirements.txt  # populate the environment w/ needed packages
+# sphinx-quickstart   # run the sphinx set-up command - if you are cloning this was already done for you
+
+# ---------------------------------------------------- #
+# OK, now we are set - this is how we actually convert #
+# (edit .rst files, build, look, repeat)               #
+# ---------------------------------------------------- #
+# NB: if starting a brand new editing session, don't   #
+# forget to re-activate the virtual environment.       #
+# ---------------------------------------------------- #
+cd PAPERS
+make html  # to make html in _build/html
+make latexpdf  # to make latext and pdf in _build/latex
+# _build/ added to .gitignore
+git push -u origin sandbox # pushed newly created sandbox branch upstream
+
+###########
+## NOTES ##
+###########
+
+### to add text please follow guidelines in:
+https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+and:
+https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+###
+
+# conf.py updated to use sphinx_rtd_theme
+

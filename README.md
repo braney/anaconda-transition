@@ -1,30 +1,120 @@
-# anaconda-transition
-*NOTE: THIS WILL BE A TECHNICAL AS OPPOSED TO A DOCUMENTATION REPO.  THE WHITE PAPERS WILL CIRCUMSCRIBE SOLUTIONS*
+Anaconda-Transition White Paper
+===============================
 
-OLD NOTES:::
+This repository holds the source and build tooling for the CaRCC Anaconda Transition Working
+Group's white paper documenting changes to Anaconda's Terms of Service from 2024-2025.
+The paper is written for researchers, research computing facilitators, and institutional
+leadership. A companion FAQ is also included.
 
-Menu of alternative  solutions for vetting/integrating
+TLDR;
+-----
 
-How to provide an anaconda equivalent software module - how to convert an existing anaconda set up and modify/redeploy it using different package manager and conda-forge channels
+### For the Community
 
-Involve developers of minforge/conda-forge/bioconda or other conda potentials such as pixi
+The `conda` package manager is free and open-source — it is not going away. The licensing
+concerns are specifically about packages hosted in Anaconda Inc.'s "defaults" channel and
+their distribution platform. **For most users, the simplest path forward is to use
+[conda-forge](https://conda-forge.org/) as your package channel** (e.g., by installing
+[Miniforge](https://conda-forge.org/download/) instead of the Anaconda distribution).
+Conda-forge is a large, community-maintained collection of packages that does not fall
+under Anaconda's Terms of Service. You can continue using `conda` (or `mamba`) exactly
+as before — just sourcing packages from conda-forge instead of "defaults."
 
-Coordinated lobbying/advocacy effort to support development of alternative to Anaconda - similar to scientific python 
+That said, Anaconda Inc. does provide value beyond just hosting packages. Their curated
+"defaults" channel undergoes additional vetting, which may matter for institutions with
+stringent security or reproducibility requirements. Organizations in regulated or
+high-security environments may find Anaconda's commercial offerings — including verified
+package provenance and enterprise support — worth evaluating. For everyone else,
+conda-forge covers the vast majority of scientific computing needs at no cost and with
+no licensing concerns.
 
-https://github.com/conda/constructor
+### For Institutional Leadership
 
-https://github.com/TuftsRT/jumboconda 
+Anaconda Inc.'s revised [Terms of Service](https://www.anaconda.com/legal/terms/terms-of-service),
+effective July 2025, introduce new compliance obligations for academic institutions.
+While Anaconda remains free for accredited educational entities under their
+[Academic Policy](https://www.anaconda.com/legal/terms/academic), institutions must now
+proactively secure an Eligible Academic Institution (EAI) agreement — renewed annually —
+and are held responsible for ensuring all users comply with the terms. Key risk areas
+include restrictions on embedding Anaconda packages in containers, mirroring repositories,
+and providing access to third parties (e.g., external collaborators), all of which may
+require a paid license even under the academic exemption. The terms can be modified with
+as little as 90 days' notice, and it falls to the institution to monitor for changes.
+Given this evolving landscape, the working group recommends that institutions evaluate
+open-source alternatives (such as Miniforge with conda-forge) to reduce compliance
+exposure, while engaging with peer institutions through
+[CaRCC](https://carcc.org/anaconda-transition-working-group/) to advocate for
+clearer, more stable academic terms.
 
-What practices would put an institute at risk of non-compliance
 
-conda-forge is maintained by anaconda’s core team so they may be biased!
+Building
+--------
 
-a simple script one can direct at an already deployed anaconda environment, and attempt to redeploy it as a free-as-in-free-beer environment, by modifying the yaml of the environment export, perhaps
+The documents are compiled to PDF outputs from RestructuredText source via LaTeX using the
+Sphinx build system. The `docs/` directory contains the source and build system for this.
+To build the documents you need to run `make latexpdf` from within `docs/` with suitable
+dependencies satisfied (i.e., Sphinx and LaTeX). Assuming you have LaTeX available on your
+system, the [uv](https://astral.sh/uv) package manager is a good approach to run the build:
 
-We should also have definitions/connotations of conda/Conda/Anaconda. This may have been done in the email discussion or I may be mistaking an article I read a while ago.
+```sh
+cd docs
+uvx --from sphinx-rtd-theme --with sphinx make latexpdf
+```
 
-An overview of the related packaging ecosystem and their license stipulations would help: conda, mamba, miniconda, micromamba, uv, pixi, etc.
 
-Standardized language and connotations. Conda environments, Anaconda, conda, mini conda, etc?
+Releases
+--------
 
-Containerize everything
+These documents are continually built using a GitHub Action that compiles the PDFs.
+These assets are attached to each release here in the repo.
+These receive their own DOI via the CaRCC Zenodo publishing platform.
+
+
+Contributing
+------------
+
+We're actively encouraging the research community to participate in the refinement and
+continual process of improvement and updates to these documents as it's a moving target.
+This should be done either as an Issue or Pull Request. Feel free to open
+an Issue to raise an item of concern for discussion. To contribute changes (small are large)
+to the papers please open a Pull Request from your own fork to the `main` branch.
+
+Once forked, clone your fork locally to make your changes.
+
+```sh
+git clone git@github.com:me/anaconda-transition
+cd anaconda-transition
+```
+
+Make sure you're also able to pull changes from the upstream repository.
+
+```sh
+git remote add upstream git@github.com:carcc/anaconda-transition
+git fetch --all
+```
+
+Commit your changes with a useful commit message.
+
+```sh
+git add --all
+git commit -m 'Fix description of XYZ'
+```
+
+Make sure your branch is up-to-date.
+
+```sh
+git pull upstream main
+```
+
+If this results in a merge conflict you'll need to resolve those before pushing
+to your fork (so-called "origin").
+
+```sh
+git push origin main
+```
+
+Now you can open a PR by visiting the main repository and selecting your fork.
+
+The `Misc/` directory contains community-contributed scripts, notes, and tips (including
+migration helper scripts in `Misc/tools/`) that are provided as-is.
+

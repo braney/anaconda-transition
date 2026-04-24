@@ -1,0 +1,5 @@
+venv
+.DS_Store
+*~
+_build
+.rd_notes.txt
